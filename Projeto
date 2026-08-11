@@ -10,3 +10,12 @@ Identificação de alunos com baixo desempenho
 Gráficos mostrando evolução das notas
 Alertas para alunos em risco de reprovação
 Dashboard para professores/coordenadores
+
+# QUANTIDADE DE TABELAS #
+
+Alunos — nome, matrícula, turma.
+Professores — nome, disciplina.
+Disciplinas — nome, professor.
+Notas — aluno, disciplina, nota, período.
+Frequência — aluno, disciplina, faltas.
+Turmas — turma, curso, semestre.
