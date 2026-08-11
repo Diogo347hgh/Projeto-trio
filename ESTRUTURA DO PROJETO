@@ -1,0 +1,39 @@
+//Estrutura Do Projeto//
+│
+├── 📄 index.html          ← Login
+├── 📄 cadastro.html       ← Cadastro
+├── 📄 dashboard.html     ← Tela principal
+├── 📄 alunos.html        ← Lista de alunos
+├── 📄 aluno.html         ← Perfil do aluno
+├── 📄 notas.html         ← Notas
+├── 📄 frequencia.html    ← Frequência
+├── 📄 alertas.html       ← Alertas
+│
+├── 📂 css
+│   ├── style.css
+│   └── responsivo.css
+│
+├── 📂 js
+│   ├── login.js
+│   ├── cadastro.js
+│   ├── dashboard.js
+│   ├── alunos.js
+│   ├── notas.js
+│   ├── frequencia.js
+│   └── alertas.js
+│
+├── 📂 img
+│   └── logo.png
+│
+├── 📂 backend
+│   ├── Program.cs
+│   ├── 📂 Models
+│   │   ├── Usuario.cs
+│   │   ├── Aluno.cs
+│   │   ├── Nota.cs
+│   │   └── Frequencia.cs
+│   │
+│   └── 📂 Data
+│       └── Banco.cs
+│
+└── 📄 README.md

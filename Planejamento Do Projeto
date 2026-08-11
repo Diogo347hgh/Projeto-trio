@@ -1,0 +1,378 @@
+🎓 EduTrack
+
+ "Sistema de Monitoramento do Desempenho Acadêmico de Estudantes"
+
+## 👥 Equipe
+
+Gregori
+Guilherme
+Diogo
+
+📌 Sobre o Projeto
+
+O **EduTrack** é um sistema desenvolvido para auxiliar instituições de ensino no acompanhamento do desempenho acadêmico dos estudantes.
+
+A proposta surgiu a partir do desafio de que muitos sistemas acadêmicos são utilizados principalmente para armazenar informações como *notas e frequência*, mas nem sempre oferecem uma análise integrada desses dados.
+
+O EduTrack busca transformar essas informações em dados mais fáceis de visualizar e interpretar, auxiliando professores e coordenadores na identificação de alunos que possam necessitar de acompanhamento pedagógico.
+
+ 🎯 Objetivo Geral
+
+Desenvolver uma plataforma simples e intuitiva capaz de monitorar e analisar o desempenho acadêmico dos estudantes, utilizando informações como notas, frequência e evolução para auxiliar na tomada de decisões pedagógicas.
+
+ 🎯 Objetivos Específicos
+
+* 📊 Facilitar o acompanhamento do desempenho dos alunos.
+* 📈 Permitir visualizar a evolução das notas ao longo do período.
+* 📅 Controlar a frequência dos estudantes.
+* 🚨 Identificar alunos que apresentam possíveis dificuldades.
+* 🔎 Facilitar a consulta das informações acadêmicas.
+* 👨‍🏫 Auxiliar professores no acompanhamento de suas turmas.
+* 👨‍💼 Auxiliar coordenadores na tomada de decisões.
+* 💻 Criar uma interface simples e fácil de utilizar.
+* 🔐 Trabalhar com os dados dos estudantes respeitando princípios da LGPD.
+
+## ❗ Problema
+
+As instituições de ensino normalmente possuem sistemas para registrar notas e frequência dos alunos.
+
+Porém, esses sistemas podem funcionar principalmente como ferramentas de armazenamento e consulta, dificultando uma análise mais ampla do desempenho.
+
+Com isso, situações como
+
+* queda gradual das notas
+* baixa frequência
+* dificuldades em determinadas disciplinas
+* baixo desempenho
+
+podem não ser identificadas rapidamente.
+
+O EduTrack busca solucionar esse problema através da organização e análise dos dados acadêmicos.
+
+## 💡 Nossa Solução
+
+O sistema reúne informações acadêmicas em um único ambiente.
+
+O fluxo principal será:
+
+text
+Notas
+   +
+Frequência
+   +
+Evolução do desempenho
+        ↓
+    Análise
+        ↓
+┌─────────────────────┐
+│ Situação do aluno   │
+├─────────────────────┤
+│ 🟢 Regular          │
+│ 🟡 Atenção          │
+│ 🔴 Necessita apoio  │
+└─────────────────────┘
+
+Dessa forma, professores e coordenadores conseguem visualizar de maneira mais rápida quais estudantes podem precisar de acompanhamento.
+
+# 🚀 Funcionalidades
+
+## 🔐 Login
+
+* Login com e-mail e senha.
+* Cadastro de usuários.
+* Controle de acesso conforme o tipo de usuário.
+
+### Tipos de usuário
+
+* 👨‍🎓 **Aluno**
+* 👨‍🏫 **Professor**
+* 👨‍💼 **Coordenador**
+
+## 📊 Dashboard
+
+O painel principal apresentará informações resumidas, como:
+
+* quantidade de alunos;
+* média geral;
+* frequência;
+* alunos que precisam de atenção;
+* indicadores de desempenho.
+
+## 👨‍🎓 Cadastro e consulta de alunos
+
+Será possível:
+
+* cadastrar alunos;
+* consultar alunos;
+* pesquisar alunos;
+* visualizar informações acadêmicas;
+* acessar o perfil individual do estudante.
+
+## 📝 Controle de Notas
+
+Professores poderão registrar as notas dos estudantes.
+
+O sistema poderá calcular automaticamente:
+
+```text
+Nota 1
++
+Nota 2
++
+Nota 3
+        ↓
+     Média
+
+A média será utilizada para auxiliar na identificação da situação acadêmica do aluno.
+
+## 📅 Controle de Frequência
+
+Será possível registrar a presença dos alunos e calcular o percentual de frequência.
+
+Exemplo:
+
+```text
+Total de aulas: 40
+Presenças: 36
+
+Frequência: 90%
+```
+
+## 🚨 Alertas de Desempenho
+
+O sistema poderá identificar situações que merecem atenção.
+
+Exemplo:
+
+```text
+🔴 ALUNO EM RISCO
+
+Aluno: Pedro
+Média: 4,5
+Frequência: 72%
+
+Motivos:
+• Média abaixo do esperado
+• Frequência baixa
+```
+
+Os alertas terão como objetivo **auxiliar o acompanhamento pedagógico**, não substituir a avaliação dos professores.
+
+## 👤 Perfil do Aluno
+
+O perfil poderá apresentar:
+
+* informações básicas;
+* notas;
+* média;
+* frequência;
+* evolução;
+* situação acadêmica;
+* possíveis alertas.
+
+
+# 🛠️ Tecnologias
+
+Como o projeto está sendo desenvolvido por estudantes em fase de aprendizagem, serão utilizadas tecnologias que a equipe já conhece ou está estudando.
+
+### Front-end
+
+* HTML5
+* CSS3
+* JavaScript
+
+### Back-end
+
+* C#
+* ASP.NET Core
+
+### Banco de Dados
+
+* MySQL ou SQL Server
+
+### Desenvolvimento
+
+* Visual Studio Code
+* Git
+* GitHub
+
+---
+
+# 🗂️ Estrutura do Projeto
+
+```text
+EDUTRACK/
+│
+├── index.html
+├── cadastro.html
+├── dashboard.html
+├── alunos.html
+├── aluno.html
+├── notas.html
+├── frequencia.html
+├── alertas.html
+│
+├── css/
+│   ├── style.css
+│   └── responsivo.css
+│
+├── js/
+│   ├── login.js
+│   ├── cadastro.js
+│   ├── dashboard.js
+│   ├── alunos.js
+│   ├── notas.js
+│   ├── frequencia.js
+│   └── alertas.js
+│
+├── img/
+│   └── logo.png
+│
+├── backend/
+│   ├── Program.cs
+│   ├── Models/
+│   └── Data/
+│
+└── README.md
+```
+
+---
+
+# 🗄️ Banco de Dados
+
+Para manter o projeto viável dentro do prazo, inicialmente serão utilizadas poucas tabelas:
+
+```text
+USUARIO
+   │
+   └── ALUNO
+
+TURMA
+
+DISCIPLINA
+
+NOTA
+
+FREQUENCIA
+
+ALERTA
+```
+
+O banco será responsável por armazenar as informações necessárias para o funcionamento do sistema.
+
+---
+
+# 🔒 LGPD
+
+O projeto considera a necessidade de proteção dos dados dos estudantes.
+
+Entre os cuidados previstos estão:
+
+* proteção das senhas;
+* controle de acesso;
+* acesso às informações conforme o tipo de usuário;
+* armazenamento apenas dos dados necessários;
+* cuidado com informações pessoais dos estudantes;
+* não disponibilização pública dos dados acadêmicos.
+
+O sistema não deve expor informações acadêmicas de alunos para usuários que não possuem autorização.
+
+---
+
+# 📅 Planejamento
+
+## Semana 1 — Interface
+
+* Criar estrutura do projeto.
+* Criar telas principais.
+* Desenvolver login e cadastro.
+* Desenvolver dashboard.
+* Criar identidade visual.
+
+## Semana 2 — Funcionalidades
+
+* Cadastro de alunos.
+* Cadastro de turmas.
+* Cadastro de disciplinas.
+* Controle de notas.
+* Controle de frequência.
+
+## Semana 3 — Back-end e Banco
+
+* Criar banco de dados.
+* Desenvolver back-end em C#.
+* Conectar sistema ao banco.
+* Integrar as telas com os dados.
+
+## Semana 4 — Análise e Finalização
+
+* Criar sistema de alertas.
+* Finalizar dashboard.
+* Testar funcionalidades.
+* Corrigir erros.
+* Melhorar responsividade.
+* Revisar segurança e LGPD.
+* Preparar apresentação.
+
+---
+
+# 📦 Entrega Esperada
+
+Ao final do projeto, esperamos entregar uma versão funcional do **EduTrack**, contendo:
+
+* ✅ Login e cadastro;
+* ✅ Controle de usuários;
+* ✅ Cadastro de alunos;
+* ✅ Cadastro de turmas e disciplinas;
+* ✅ Registro de notas;
+* ✅ Controle de frequência;
+* ✅ Dashboard;
+* ✅ Perfil do aluno;
+* ✅ Identificação de possíveis situações de risco;
+* ✅ Alertas de desempenho;
+* ✅ Banco de dados;
+* ✅ Interface responsiva;
+* ✅ Cuidados relacionados à LGPD.
+
+---
+
+# 🌱 Melhorias Futuras
+
+Caso o projeto continue sendo desenvolvido, algumas funcionalidades poderão ser adicionadas:
+
+* 📱 Aplicativo mobile;
+* 📧 Notificações;
+* 📄 Relatórios em PDF;
+* 📊 Gráficos mais avançados;
+* 🔑 Login com Google;
+* 🤖 Recursos de inteligência artificial;
+* 🧠 Análise mais avançada do comportamento e evolução;
+* 📈 Previsões de desempenho.
+
+Essas funcionalidades não fazem parte do escopo inicial devido ao prazo de desenvolvimento.
+
+---
+
+# 👨‍💻 Equipe
+
+### Gregori
+
+Desenvolvimento e implementação do sistema.
+
+### Guilherme
+
+Desenvolvimento e implementação do sistema.
+
+### Diogo
+
+Desenvolvimento e implementação do sistema.
+
+> As responsabilidades podem ser divididas entre os integrantes conforme as etapas do projeto e as habilidades de cada membro.
+
+---
+
+## 📄 Status do Projeto
+
+🚧 **Em desenvolvimento**
+
+O projeto está sendo desenvolvido como uma solução acadêmica para o desafio de **Monitoramento do Desempenho Acadêmico de Estudantes**.
