@@ -1,8 +1,6 @@
-# 🎓 EduTrack
+🎓 EduTrack
 
-### Sistema de Monitoramento do Desempenho Acadêmico de Estudantes
-
----
+ "Sistema de Monitoramento do Desempenho Acadêmico de Estudantes"
 
 ## 👥 Equipe
 
@@ -10,25 +8,19 @@ Gregori
 Guilherme
 Diogo
 
----
-
-## 📌 Sobre o Projeto
+📌 Sobre o Projeto
 
 O **EduTrack** é um sistema desenvolvido para auxiliar instituições de ensino no acompanhamento do desempenho acadêmico dos estudantes.
 
-A proposta surgiu a partir do desafio de que muitos sistemas acadêmicos são utilizados principalmente para armazenar informações como **notas e frequência**, mas nem sempre oferecem uma análise integrada desses dados.
+A proposta surgiu a partir do desafio de que muitos sistemas acadêmicos são utilizados principalmente para armazenar informações como *notas e frequência*, mas nem sempre oferecem uma análise integrada desses dados.
 
 O EduTrack busca transformar essas informações em dados mais fáceis de visualizar e interpretar, auxiliando professores e coordenadores na identificação de alunos que possam necessitar de acompanhamento pedagógico.
 
----
-
-## 🎯 Objetivo Geral
+ 🎯 Objetivo Geral
 
 Desenvolver uma plataforma simples e intuitiva capaz de monitorar e analisar o desempenho acadêmico dos estudantes, utilizando informações como notas, frequência e evolução para auxiliar na tomada de decisões pedagógicas.
 
----
-
-## 🎯 Objetivos Específicos
+ 🎯 Objetivos Específicos
 
 * 📊 Facilitar o acompanhamento do desempenho dos alunos.
 * 📈 Permitir visualizar a evolução das notas ao longo do período.
@@ -39,8 +31,6 @@ Desenvolver uma plataforma simples e intuitiva capaz de monitorar e analisar o d
 * 👨‍💼 Auxiliar coordenadores na tomada de decisões.
 * 💻 Criar uma interface simples e fácil de utilizar.
 * 🔐 Trabalhar com os dados dos estudantes respeitando princípios da LGPD.
-
----
 
 ## ❗ Problema
 
@@ -59,15 +49,13 @@ podem não ser identificadas rapidamente.
 
 O EduTrack busca solucionar esse problema através da organização e análise dos dados acadêmicos.
 
----
-
 ## 💡 Nossa Solução
 
 O sistema reúne informações acadêmicas em um único ambiente.
 
 O fluxo principal será:
 
-```text
+text
 Notas
    +
 Frequência
@@ -83,11 +71,8 @@ Evolução do desempenho
 │ 🟡 Atenção          │
 │ 🔴 Necessita apoio  │
 └─────────────────────┘
-```
 
 Dessa forma, professores e coordenadores conseguem visualizar de maneira mais rápida quais estudantes podem precisar de acompanhamento.
-
----
 
 # 🚀 Funcionalidades
 
@@ -103,8 +88,6 @@ Dessa forma, professores e coordenadores conseguem visualizar de maneira mais r�
 * 👨‍🏫 **Professor**
 * 👨‍💼 **Coordenador**
 
----
-
 ## 📊 Dashboard
 
 O painel principal apresentará informações resumidas, como:
@@ -115,8 +98,6 @@ O painel principal apresentará informações resumidas, como:
 * alunos que precisam de atenção;
 * indicadores de desempenho.
 
----
-
 ## 👨‍🎓 Cadastro e consulta de alunos
 
 Será possível:
@@ -126,8 +107,6 @@ Será possível:
 * pesquisar alunos;
 * visualizar informações acadêmicas;
 * acessar o perfil individual do estudante.
-
----
 
 ## 📝 Controle de Notas
 
@@ -143,11 +122,8 @@ Nota 2
 Nota 3
         ↓
      Média
-```
 
 A média será utilizada para auxiliar na identificação da situação acadêmica do aluno.
-
----
 
 ## 📅 Controle de Frequência
 
@@ -161,8 +137,6 @@ Presenças: 36
 
 Frequência: 90%
 ```
-
----
 
 ## 🚨 Alertas de Desempenho
 
@@ -184,8 +158,6 @@ Motivos:
 
 Os alertas terão como objetivo **auxiliar o acompanhamento pedagógico**, não substituir a avaliação dos professores.
 
----
-
 ## 👤 Perfil do Aluno
 
 O perfil poderá apresentar:
@@ -198,7 +170,6 @@ O perfil poderá apresentar:
 * situação acadêmica;
 * possíveis alertas.
 
----
 
 # 🛠️ Tecnologias
 
