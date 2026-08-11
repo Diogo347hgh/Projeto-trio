@@ -1,78 +1,39 @@
-edutrack/
+//Estrutura Do Projeto//
 │
-├── index.html                 # Login
-├── cadastro.html              # Cadastro de usuário
+├── 📄 index.html          ← Login
+├── 📄 cadastro.html       ← Cadastro
+├── 📄 dashboard.html     ← Tela principal
+├── 📄 alunos.html        ← Lista de alunos
+├── 📄 aluno.html         ← Perfil do aluno
+├── 📄 notas.html         ← Notas
+├── 📄 frequencia.html    ← Frequência
+├── 📄 alertas.html       ← Alertas
 │
-├── pages/                     # Páginas do sistema
-│   ├── dashboard.html
-│   ├── alunos.html
-│   ├── aluno-perfil.html
-│   ├── professores.html
-│   ├── disciplinas.html
-│   ├── turmas.html
-│   ├── notas.html
-│   ├── frequencia.html
-│   ├── alertas.html
-│   ├── relatorios.html
-│   └── configuracoes.html
+├── 📂 css
+│   ├── style.css
+│   └── responsivo.css
 │
-├── css/                       # Estilos
-│   ├── global.css             # Estilos gerais
-│   ├── login.css              # Login e cadastro
-│   ├── dashboard.css          # Dashboard
-│   ├── alunos.css             # Alunos
-│   ├── notas.css              # Notas
-│   ├── frequencia.css         # Frequência
-│   └── relatorios.css         # Relatórios
+├── 📂 js
+│   ├── login.js
+│   ├── cadastro.js
+│   ├── dashboard.js
+│   ├── alunos.js
+│   ├── notas.js
+│   ├── frequencia.js
+│   └── alertas.js
 │
-├── js/                        # JavaScript
-│   ├── main.js                # Funções gerais
-│   ├── login.js               # Login
-│   ├── cadastro.js            # Cadastro
-│   ├── dashboard.js           # Dashboard
-│   ├── alunos.js              # Alunos
-│   ├── professores.js         # Professores
-│   ├── disciplinas.js         # Disciplinas
-│   ├── turmas.js              # Turmas
-│   ├── notas.js               # Notas
-│   ├── frequencia.js          # Frequência
-│   ├── alertas.js             # Alertas
-│   └── relatorios.js          # Relatórios
+├── 📂 img
+│   └── logo.png
 │
-├── assets/                    # Arquivos visuais
-│   ├── img/
-│   │   └── logo.png
-│   └── icons/
-│
-├── components/                # Elementos reutilizáveis
-│   ├── sidebar.html
-│   ├── navbar.html
-│   └── footer.html
-│
-├── backend/                   # Se tiver backend
-│   ├── config/
-│   │   └── database.js
+├── 📂 backend
+│   ├── Program.cs
+│   ├── 📂 Models
+│   │   ├── Usuario.cs
+│   │   ├── Aluno.cs
+│   │   ├── Nota.cs
+│   │   └── Frequencia.cs
 │   │
-│   ├── controllers/
-│   │   ├── alunoController.js
-│   │   ├── professorController.js
-│   │   ├── notaController.js
-│   │   └── frequenciaController.js
-│   │
-│   ├── models/
-│   │   ├── alunoModel.js
-│   │   ├── professorModel.js
-│   │   ├── disciplinaModel.js
-│   │   └── notaModel.js
-│   │
-│   └── routes/
-│       ├── alunos.js
-│       ├── professores.js
-│       ├── notas.js
-│       └── frequencia.js
+│   └── 📂 Data
+│       └── Banco.cs
 │
-├── database/
-│   ├── schema.sql
-│   └── seed.sql
-│
-└── README.md
+└── 📄 README.md
