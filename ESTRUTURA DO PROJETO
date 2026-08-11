@@ -1,0 +1,78 @@
+edutrack/
+│
+├── index.html                 # Login
+├── cadastro.html              # Cadastro de usuário
+│
+├── pages/                     # Páginas do sistema
+│   ├── dashboard.html
+│   ├── alunos.html
+│   ├── aluno-perfil.html
+│   ├── professores.html
+│   ├── disciplinas.html
+│   ├── turmas.html
+│   ├── notas.html
+│   ├── frequencia.html
+│   ├── alertas.html
+│   ├── relatorios.html
+│   └── configuracoes.html
+│
+├── css/                       # Estilos
+│   ├── global.css             # Estilos gerais
+│   ├── login.css              # Login e cadastro
+│   ├── dashboard.css          # Dashboard
+│   ├── alunos.css             # Alunos
+│   ├── notas.css              # Notas
+│   ├── frequencia.css         # Frequência
+│   └── relatorios.css         # Relatórios
+│
+├── js/                        # JavaScript
+│   ├── main.js                # Funções gerais
+│   ├── login.js               # Login
+│   ├── cadastro.js            # Cadastro
+│   ├── dashboard.js           # Dashboard
+│   ├── alunos.js              # Alunos
+│   ├── professores.js         # Professores
+│   ├── disciplinas.js         # Disciplinas
+│   ├── turmas.js              # Turmas
+│   ├── notas.js               # Notas
+│   ├── frequencia.js          # Frequência
+│   ├── alertas.js             # Alertas
+│   └── relatorios.js          # Relatórios
+│
+├── assets/                    # Arquivos visuais
+│   ├── img/
+│   │   └── logo.png
+│   └── icons/
+│
+├── components/                # Elementos reutilizáveis
+│   ├── sidebar.html
+│   ├── navbar.html
+│   └── footer.html
+│
+├── backend/                   # Se tiver backend
+│   ├── config/
+│   │   └── database.js
+│   │
+│   ├── controllers/
+│   │   ├── alunoController.js
+│   │   ├── professorController.js
+│   │   ├── notaController.js
+│   │   └── frequenciaController.js
+│   │
+│   ├── models/
+│   │   ├── alunoModel.js
+│   │   ├── professorModel.js
+│   │   ├── disciplinaModel.js
+│   │   └── notaModel.js
+│   │
+│   └── routes/
+│       ├── alunos.js
+│       ├── professores.js
+│       ├── notas.js
+│       └── frequencia.js
+│
+├── database/
+│   ├── schema.sql
+│   └── seed.sql
+│
+└── README.md
