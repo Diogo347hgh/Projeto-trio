@@ -1,0 +1,54 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+div {
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(61, 58, 58);
+    margin-left: 750px;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px rgb(0, 0, 0) solid;
+    box-shadow: 0 0 40px black;
+
+}
+
+h2 {
+    color: rgb(214, 145, 54);
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient( 225deg, rgb(0, 68, 255) 0%, rgb(0, 17, 255) 40%, white 40%, white 75%, black 75%, black 100%);
+}
+
+img {
+    color: rgb(214, 145, 54);
+    border-color: black;
+    border: 3px solid;
+}
+
+button{
+    border-radius: 20px rgb(214, 145, 54);
+    background-color: rgb(0, 0, 0);
+    color: rgb(214, 145, 54);
+    border: 1px flex;
+    padding: 5px;
+    box-shadow: 0 0 10px rgb(255, 145, 0);
+
+}
+
+button:hover{
+    background-color: rgb(71, 71, 69);
+    box-shadow: 0 0 10px rgb(231, 176, 74);
+}
