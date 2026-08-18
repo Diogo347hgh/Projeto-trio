@@ -6,16 +6,11 @@
 
 body {
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: Arial, Helvetica, sans-serif;
-
-    background-color: #62b3f1
-;
-
+    background-color: #62b3f1;
     /* Fundo de bolinhas */
     background-image: radial-gradient(
         #cbd8e5 1.5px,
@@ -23,20 +18,16 @@ body {
     );
 
     background-size: 25px 25px;
-
     overflow: hidden;
 }
 
 body > h1 {
     width: 42%;
     height: 700px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 40px;
-
     background: linear-gradient(
         180deg,
         #08ace8,
@@ -44,16 +35,10 @@ body > h1 {
     );
 
     color: white;
-
     font-size: 42px;
     text-align: center;
-
     letter-spacing: 2px;
-
-    box-shadow:
-        -10px 10px 35px rgba(0, 0, 0, 0.12),
-        0 10px 35px rgba(0, 0, 0, 0.20);
-
+    box-shadow: -10px 10px 35px rgba(0, 0, 0, 0.12), 0 10px 35px rgba(0, 0, 0, 0.20);
     position: relative;
     z-index: 2;
 }
@@ -63,32 +48,22 @@ body > h1 {
 
 body > h1::before {
     content: "";
-
     position: absolute;
-
     width: 300px;
     height: 300px;
-
     border-radius: 50%;
-
     background: rgba(255, 255, 255, 0.07);
-
     top: -150px;
     left: -120px;
 }
 
 body > h1::after {
     content: "";
-
     position: absolute;
-
     width: 250px;
     height: 250px;
-
     border-radius: 50%;
-
     background: rgba(255, 255, 255, 0.06);
-
     bottom: -120px;
     right: -100px;
 }
@@ -96,38 +71,25 @@ body > h1::after {
 body > div {
     width: 42%;
     height: 700px;
-
     background-color: white;
-
     padding: 60px 70px;
-
     position: relative;
     z-index: 2;
-
-    box-shadow:
-        10px 10px 35px rgba(0, 0, 0, 0.12),
-        0 10px 35px rgba(0, 0, 0, 0.20);
-
+    box-shadow:10px 10px 35px rgba(0, 0, 0, 0.12),0 10px 35px rgba(0, 0, 0, 0.20);
     overflow-y: auto;
 }
 
 body > div h2 {
     text-align: center;
-
     color: #172b3a;
-
     font-size: 28px;
-
     margin-bottom: 30px;
 }
 
 body > div label {
     display: block;
-
     margin-bottom: 7px;
-
     color: #263746;
-
     font-size: 15px;
     font-weight: 600;
 }
@@ -135,68 +97,46 @@ body > div label {
 body > div input {
     width: 100%;
     height: 48px;
-
     border: none;
     outline: none;
-
     border-radius: 30px;
-
     padding: 0 20px;
-
     background-color: #f1f5f8;
-
     color: #263746;
-
     font-size: 15px;
-
     transition: 0.3s;
 }
 
 body > div input:focus {
     background-color: white;
-
-    box-shadow:
-        0 0 0 2px #08ace8;
+    box-shadow: 0 0 0 2px #08ace8;
 }
 
 body > div select {
     width: 100%;
     height: 48px;
-
     border: none;
     outline: none;
-
     border-radius: 30px;
-
     padding: 0 20px;
-
     background-color: #f1f5f8;
-
     color: #263746;
-
     font-size: 15px;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 body > div select:focus {
     background-color: white;
-
-    box-shadow:
-        0 0 0 2px #08ace8;
+    box-shadow:0 0 0 2px #08ace8;
 }
 
 body > div button {
     width: 100%;
     height: 52px;
-
     margin-top: 15px;
-
     border: none;
     border-radius: 30px;
-
     background: linear-gradient(
         90deg,
         #08cfa8,
@@ -204,20 +144,15 @@ body > div button {
     );
 
     color: white;
-
     font-size: 16px;
     font-weight: bold;
-
     letter-spacing: 2px;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 body > div button:hover {
     transform: translateY(-2px);
-
     box-shadow:
         0 8px 20px rgba(0, 190, 150, 0.30);
 }
@@ -225,30 +160,24 @@ body > div button:hover {
 body > div button:active {
     transform: translateY(0);
 }
-
 #coordenador,
 #professor,
 #aluno {
     margin-top: 10px;
 }
-
 @media (max-width: 900px) {
-
     body {
         overflow-y: auto;
     }
-
     body > h1 {
         width: 40%;
         height: 650px;
-
         font-size: 32px;
     }
 
     body > div {
         width: 50%;
         height: 650px;
-
         padding: 50px 40px;
     }
 }
@@ -257,23 +186,18 @@ body > div button:active {
 
     body {
         flex-direction: column;
-
         padding: 25px 15px;
-
         overflow-y: auto;
     }
 
     body > h1 {
         width: 100%;
         height: 170px;
-
         font-size: 30px;
-
         box-shadow:
             0 -5px 25px rgba(0, 0, 0, 0.12),
             0 5px 25px rgba(0, 0, 0, 0.18);
     }
-
     body > div {
         width: 100%;
         height: auto;
@@ -285,27 +209,21 @@ body > div button:active {
     }
 }
 
-
 @media (max-width: 450px) {
-
     body {
         padding: 15px;
     }
-
     body > h1 {
         height: 130px;
 
         font-size: 25px;
     }
-
     body > div {
         padding: 30px 20px;
     }
-
     body > div h2 {
         font-size: 23px;
     }
-
     body > div input,
     body > div select {
         height: 45px;
