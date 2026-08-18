@@ -6,17 +6,19 @@
 
 body {
     min-height: 100vh;
+
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
     font-family: Arial, Helvetica, sans-serif;
 
-    background-color: #42bfec;
+    background-color: #62b3f1
+;
 
-    /* Bolinhas no fundo */
+    /* Fundo de bolinhas */
     background-image: radial-gradient(
-        #c9d7e5 1.5px,
+        #cbd8e5 1.5px,
         transparent 1.5px
     );
 
@@ -30,47 +32,36 @@ body > h1 {
     height: 700px;
 
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    padding: 40px;
 
     background: linear-gradient(
         180deg,
         #08ace8,
-        #0787ee
+        #0788ed
     );
 
     color: white;
 
     font-size: 42px;
-    font-weight: 700;
-    letter-spacing: 2px;
-
     text-align: center;
 
+    letter-spacing: 2px;
+
+    box-shadow:
+        -10px 10px 35px rgba(0, 0, 0, 0.12),
+        0 10px 35px rgba(0, 0, 0, 0.20);
+
     position: relative;
-
     z-index: 2;
-
-    box-shadow: 0 10px 35px rgba(0, 80, 150, 0.20);
 }
+
+
+/* Bolinha decorativa */
 
 body > h1::before {
-    content: "";
-
-    position: absolute;
-
-    width: 220px;
-    height: 220px;
-
-    background: rgba(255, 255, 255, 0.08);
-
-    border-radius: 50%;
-
-    top: -80px;
-    left: -80px;
-}
-
-body > h1::after {
     content: "";
 
     position: absolute;
@@ -78,12 +69,28 @@ body > h1::after {
     width: 300px;
     height: 300px;
 
-    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    top: -150px;
+    left: -120px;
+}
+
+body > h1::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
 
     border-radius: 50%;
 
-    bottom: -150px;
-    right: -150px;
+    background: rgba(255, 255, 255, 0.06);
+
+    bottom: -120px;
+    right: -100px;
 }
 
 body > div {
@@ -92,57 +99,55 @@ body > div {
 
     background-color: white;
 
-    padding: 70px 70px;
-
-    box-shadow: 0 10px 35px rgba(0, 80, 150, 0.20);
+    padding: 60px 70px;
 
     position: relative;
-
     z-index: 2;
+
+    box-shadow:
+        10px 10px 35px rgba(0, 0, 0, 0.12),
+        0 10px 35px rgba(0, 0, 0, 0.20);
 
     overflow-y: auto;
 }
 
 body > div h2 {
+    text-align: center;
+
     color: #172b3a;
 
     font-size: 28px;
 
-    margin-bottom: 35px;
-
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 body > div label {
     display: block;
 
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 
     color: #263746;
 
     font-size: 15px;
-
     font-weight: 600;
 }
 
 body > div input {
     width: 100%;
-
     height: 48px;
 
     border: none;
+    outline: none;
 
     border-radius: 30px;
 
-    background-color: #f1f5f8;
-
     padding: 0 20px;
 
-    font-size: 15px;
+    background-color: #f1f5f8;
 
     color: #263746;
 
-    outline: none;
+    font-size: 15px;
 
     transition: 0.3s;
 }
@@ -150,49 +155,46 @@ body > div input {
 body > div input:focus {
     background-color: white;
 
-    box-shadow: 0 0 0 2px #08ace8;
+    box-shadow:
+        0 0 0 2px #08ace8;
 }
 
 body > div select {
     width: 100%;
-
     height: 48px;
 
     border: none;
+    outline: none;
 
     border-radius: 30px;
 
-    background-color: #f1f5f8;
-
     padding: 0 20px;
+
+    background-color: #f1f5f8;
 
     color: #263746;
 
     font-size: 15px;
-
-    outline: none;
 
     cursor: pointer;
 
     transition: 0.3s;
 }
 
-
 body > div select:focus {
     background-color: white;
 
-    box-shadow: 0 0 0 2px #08ace8;
+    box-shadow:
+        0 0 0 2px #08ace8;
 }
 
 body > div button {
     width: 100%;
-
     height: 52px;
 
     margin-top: 15px;
 
     border: none;
-
     border-radius: 30px;
 
     background: linear-gradient(
@@ -204,7 +206,6 @@ body > div button {
     color: white;
 
     font-size: 16px;
-
     font-weight: bold;
 
     letter-spacing: 2px;
@@ -214,13 +215,12 @@ body > div button {
     transition: 0.3s;
 }
 
-
 body > div button:hover {
     transform: translateY(-2px);
 
-    box-shadow: 0 7px 18px rgba(0, 190, 150, 0.30);
+    box-shadow:
+        0 8px 20px rgba(0, 190, 150, 0.30);
 }
-
 
 body > div button:active {
     transform: translateY(0);
@@ -253,22 +253,25 @@ body > div button:active {
     }
 }
 
-
 @media (max-width: 700px) {
 
     body {
         flex-direction: column;
 
-        padding: 30px 20px;
+        padding: 25px 15px;
 
         overflow-y: auto;
     }
 
     body > h1 {
         width: 100%;
-        height: 180px;
+        height: 170px;
 
         font-size: 30px;
+
+        box-shadow:
+            0 -5px 25px rgba(0, 0, 0, 0.12),
+            0 5px 25px rgba(0, 0, 0, 0.18);
     }
 
     body > div {
@@ -276,6 +279,9 @@ body > div button:active {
         height: auto;
 
         padding: 40px 30px;
+
+        box-shadow:
+            0 5px 25px rgba(0, 0, 0, 0.18);
     }
 }
 
@@ -287,7 +293,7 @@ body > div button:active {
     }
 
     body > h1 {
-        height: 140px;
+        height: 130px;
 
         font-size: 25px;
     }
