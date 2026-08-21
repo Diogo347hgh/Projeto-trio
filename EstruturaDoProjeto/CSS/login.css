@@ -72,7 +72,14 @@ label {
     color: white;
     cursor: pointer;
 }
-
+.cadastrar button:hover{
+    background: none;
+    border: none;
+    color: green;
+    cursor: pointer;
+    width: 55px;
+    height: 25px;
+}
 .entrar button {
     width: 100%;
     height: 50px;
