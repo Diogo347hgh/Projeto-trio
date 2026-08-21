@@ -12,7 +12,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #eef8ff;
     /* bolinhas */
-    background-image: radial-gradient( #b8dff5 1.5px, transparent 1.5px);
+    background-image: radial-gradient( #053652 1.5px, transparent 1.5px);
     background-size: 25px 25px;
     position: relative;
     overflow: hidden;
