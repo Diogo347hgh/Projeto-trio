@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esqueceu</title>
-<link rel="stylesheet" href="../EstruturaDoProjeto/CSS/esqueceu.css">
+
+    <title>Esqueceu A Senha Guigstrack</title>
+
+    <link rel="stylesheet" href="../EstruturaDoProjeto/CSS/esqueceu.css">
+    <script src="../EstruturaDoProjeto/JS/esqueceu.js" defer></script>
 </head>
+
 <body>
-    <h1>Desculpe,Terminaremos O Restante Em Breve :)</h1>
-    <h2>Terminaremos Quando o Senai Terminar de Pagar</h2>
+
+    <h1>Guigstrack Esqueceu A Senha ?</h1>
+
+    <form id="formCadastro">
+
+        <h2>Preencha as informações:</h2>
+
+        <label for="Nome">Seu Nome Completo:</label><br>
+        <input type="text" id="Nome"><br><br>
+
+        <label for="email">Seu E-mail De Recuperação:</label><br>
+        <input type="email" id="email"><br><br>
+
+        <label for="senha">Informe Uma Senha Antiga:</label><br>
+        <input type="password" id="senha"><br><br>
+
+        <label for="confirmarSE">Confirme sua senha:</label><br>
+        <input type="password" id="confirmarSE"><br><br>
+        
+            <a href="../EstruturaDoProjeto/login.html"> <button class="voltar">Voltar Para A Tela Inical </button> </a>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
 </body>
+
 </html>
