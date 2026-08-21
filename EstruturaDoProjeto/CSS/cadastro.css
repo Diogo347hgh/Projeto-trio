@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #eef8ff;
     /* bolinhas */
-    background-image: radial-gradient( #053652 1.5px, transparent 1.5px);
+    background-image: radial-gradient( #06344e6c 1.5px, transparent 1.5px);
     background-size: 25px 25px;
     position: relative;
     overflow: hidden;
