@@ -117,19 +117,19 @@ button {
     margin-top: 15px;
     border: none;
     border-radius: 11px;
-    background: linear-gradient( 90deg,#08b6ee, #087fd3);
+    background: linear-gradient( 90deg, #05d19b , #034b38);
     color: white;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 8px 18px rgba(8, 127, 211, 0.25);
+    box-shadow: 0 8px 18px rgba(8, 126, 211, 0.658);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
     transform: translateY(-2px);
     box-shadow:
-        0 12px 22px rgba(8, 127, 211, 0.30);
+        0 12px 22px rgb(8, 126, 211);
 }
 
 button:active {
