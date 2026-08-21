@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guigstrack - Dashboard</title>
+
+    <link rel="stylesheet" href="../EstruturaDoProjeto/CSS/dashboard.css">
+
+    <script src="../EstruturaDoProjeto/JS/dashboard.js" defer></script>
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h1>Guigstrack</h1>
+
+            <span>Área do aluno</span>
+
+        </div>
+
+
+        <nav>
+
+            <button class="ativo">
+                Dashboard
+            </button>
+
+            <button>
+                Minhas notas
+            </button>
+
+            <button>
+                Frequência
+            </button>
+
+            <button>
+                Atividades
+            </button>
+
+        </nav>
+
+    </aside>
+
+
+
+
+    <main class="conteudo">
+
+
+
+
+        <header>
+
+            <div class="boas-vindas">
+
+                <h2 id="saudacao">
+                    Olá!
+                </h2>
+
+                <p>
+                    Acompanhe seu desempenho escolar.
+                </p>
+
+            </div>
+
+
+            <div class="usuario">
+
+                <div class="avatar" id="avatar">
+
+                    A
+
+                </div>
+
+
+                <div class="dados-usuario">
+
+                    <strong id="nomeUsuario">
+                        Aluno
+                    </strong>
+
+                    <small>
+                        Aluno
+                    </small>
+
+                </div>
+
+
+                <button class="btn-opcoes" id="btnOpcoes">
+
+                    ⋮
+
+                </button>
+
+                <div class="menu-usuario" id="menuUsuario">
+
+                    <button id="perfil">
+                         Meu perfil
+                    </button>
+
+                    <button id="configuracoes">
+                         Configurações
+                    </button>
+
+                    <button id="sair">
+                         Sair
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="cards">
+
+
+            <div class="card">
+
+                <div class="icone azul">
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Média geral
+                    </span>
+
+                    <h3 id="mediaGeral">
+                        0,0
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icone verde">
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Frequência
+                    </span>
+
+                    <h3 id="frequencia">
+                        0%
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icone vermelho">
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Faltas
+                    </span>
+
+                    <h3 id="totalFaltas">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icone roxo">
+
+                </div>
+
+                <div>
+
+                    <span>
+                        Atividades
+                    </span>
+
+                    <h3 id="atividadesConcluidas">
+                        0
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+        <section class="box">
+
+            <div class="box-cabecalho">
+
+                <div>
+
+                    <h2>
+                        Minhas notas
+                    </h2>
+
+                    <p>
+                        Acompanhe suas notas por disciplina.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="tabela">
+
+
+                <div class="linha cabecalho">
+
+                    <span>
+                        Disciplina
+                    </span>
+
+                    <span>
+                        1º Bimestre
+                    </span>
+
+                    <span>
+                        2º Bimestre
+                    </span>
+
+                    <span>
+                        Média
+                    </span>
+
+                </div>
+
+
+                <div class="linha">
+
+                    <strong>
+                        Programação
+                    </strong>
+
+                    <span id="prog1">
+                        0,0
+                    </span>
+
+                    <span id="prog2">
+                        0,0
+                    </span>
+
+                    <strong id="progMedia">
+                        0,0
+                    </strong>
+
+                </div>
+
+
+                <div class="linha">
+
+                    <strong>
+                        Banco de Dados
+                    </strong>
+
+                    <span id="bd1">
+                        0,0
+                    </span>
+
+                    <span id="bd2">
+                        0,0
+                    </span>
+
+                    <strong id="bdMedia">
+                        0,0
+                    </strong>
+
+                </div>
+
+
+                <div class="linha">
+
+                    <strong>
+                        HTML e CSS
+                    </strong>
+
+                    <span id="html1">
+                        0,0
+                    </span>
+
+                    <span id="html2">
+                        0,0
+                    </span>
+
+                    <strong id="htmlMedia">
+                        0,0
+                    </strong>
+
+                </div>
+
+
+                <div class="linha">
+
+                    <strong>
+                        JavaScript
+                    </strong>
+
+                    <span id="js1">
+                        0,0
+                    </span>
+
+                    <span id="js2">
+                        0,0
+                    </span>
+
+                    <strong id="jsMedia">
+                        0,0
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="duas-colunas">
+
+
+
+
+            <div class="box">
+
+                <h2>
+                    Minhas faltas
+                </h2>
+
+                <div class="faltas-lista">
+
+
+                    <div class="item-falta">
+
+                        <span>
+                            Programação
+                        </span>
+
+                        <strong id="faltaProgramacao">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="item-falta">
+
+                        <span>
+                            Banco de Dados
+                        </span>
+
+                        <strong id="faltaBanco">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="item-falta">
+
+                        <span>
+                            HTML e CSS
+                        </span>
+
+                        <strong id="faltaHtml">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="item-falta">
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                        <strong id="faltaJavascript">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="box">
+
+                <h2>
+                    Atividades recentes
+                </h2>
+
+
+                <div class="atividade">
+
+                    <div>
+
+                        <strong>
+                            Projeto JavaScript
+                        </strong>
+
+                        <small>
+                            JavaScript
+                        </small>
+
+                    </div>
+
+                    <span class="concluida">
+                        Concluída
+                    </span>
+
+                </div>
+
+
+                <div class="atividade">
+
+                    <div>
+
+                        <strong>
+                            Banco de Dados
+                        </strong>
+
+                        <small>
+                            Banco de Dados
+                        </small>
+
+                    </div>
+
+                    <span class="pendente">
+                        Pendente
+                    </span>
+
+                </div>
+
+
+                <div class="atividade">
+
+                    <div>
+
+                        <strong>
+                            Página HTML
+                        </strong>
+
+                        <small>
+                            HTML e CSS
+                        </small>
+
+                    </div>
+
+                    <span class="concluida">
+                        Concluída
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
