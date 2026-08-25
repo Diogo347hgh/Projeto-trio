@@ -1,0 +1,150 @@
+Exatamente. Nesse caso, nem precisa de alunos.html.
+
+Se somente o professor terá acesso à lista dos alunos, essa funcionalidade pode ficar dentro do Dashboard do Professor.
+
+A estrutura fica mais simples:
+
+login.html
+    ↓
+dashboard.html
+    ↓
+┌─────────────────────────────────┐
+│ Quem está logado?               │
+└─────────────────────────────────┘
+       ↓          ↓          ↓
+     ALUNO     PROFESSOR  COORDENADOR
+       ↓          ↓          ↓
+   Dashboard   Dashboard   Dashboard
+👨‍🎓 Dashboard do aluno
+
+O aluno vê somente os próprios dados:
+
+MEU DESEMPENHO
+
+Média geral: 7,5
+Frequência: 91%
+
+Notas
+├── Matemática: 8,0
+├── Programação: 7,5
+└── Banco de Dados: 7,0
+
+Frequência
+└── 91%
+
+Evolução
+└── gráfico/notas
+
+Alertas
+└── 🟢 Regular
+
+Ele não vê outros alunos.
+
+👨‍🏫 Dashboard do professor
+
+Aqui entra a parte que você falou.
+
+O professor pode ter várias turmas, então:
+
+MINHAS TURMAS
+
+[ 1º A - Desenvolvimento de Sistemas ]
+[ 1º B - Desenvolvimento de Sistemas ]
+[ 2º A - Desenvolvimento de Sistemas ]
+
+Ao selecionar uma turma:
+
+1º A - Desenvolvimento de Sistemas
+
+ALUNOS
+
+Pedro Silva
+Média: 7,8
+Frequência: 92%
+🟢 Regular
+
+João Santos
+Média: 5,4
+Frequência: 78%
+🔴 Necessita apoio
+
+Maria Souza
+Média: 6,2
+Frequência: 85%
+🟡 Atenção
+
+E aí o professor pode ter as funções:
+
+📝 Registrar notas
+📅 Registrar frequência
+🚨 Ver alertas
+📊 Acompanhar desempenho
+
+Tudo dentro do dashboard.html.
+
+👨‍💼 Dashboard do coordenador
+
+O coordenador teria uma visão mais geral, mas não precisa necessariamente acessar todos os alunos individualmente.
+
+Por exemplo:
+
+VISÃO GERAL
+
+Alunos: 450
+Professores: 32
+Turmas: 18
+
+Média geral: 7,1
+Frequência geral: 88%
+
+🚨 Alertas
+
+32 alunos em atenção
+12 alunos necessitam apoio
+
+Pode também visualizar informações das turmas e professores conforme as permissões que vocês definirem.
+
+Então eu mudaria sua estrutura para:
+EstruturaDoProjeto/
+│
+├── BACKEND/
+│
+├── CSS/
+│   ├── global.css
+│   ├── responsivo.css
+│   ├── cadastro.css
+│   ├── login.css
+│   └── dashboard.css
+│
+├── JS/
+│   ├── cadastro.js
+│   ├── login.js
+│   └── dashboard.js
+│
+├── cadastro.html
+├── dashboard.html
+└── login.html
+
+Ou seja, tira ALUNO.html e alunos.html.
+
+O Dashboard passa a ser o centro do sistema:
+
+                    LOGIN
+                      ↓
+                DASHBOARD.HTML
+                      ↓
+        ┌─────────────┼─────────────┐
+        ↓             ↓             ↓
+      ALUNO        PROFESSOR    COORDENADOR
+        │             │             │
+        ↓             ↓             ↓
+   Seus dados      Suas turmas   Visão geral
+                     │
+                     ↓
+                  Alunos
+                     │
+              ┌──────┼──────┐
+              ↓      ↓      ↓
+            Notas  Frequência Alertas
+
+E isso combina melhor com o que vocês definiram: o professor acompanha os alunos das turmas dele diretamente pelo Dashboard, enquanto o aluno acompanha o próprio desempenho.
