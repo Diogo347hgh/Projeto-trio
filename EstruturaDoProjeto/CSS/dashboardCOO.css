@@ -1,0 +1,298 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #eef8ff;
+
+    /* Bolinhas do fundo */
+    background-image: radial-gradient(#06344e6c 1.5px, transparent 1.5px);
+    background-size: 25px 25px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Bolinha azul de cima */
+body::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #08b6ee, #087fd3);
+    border-radius: 50%;
+    top: -180px;
+    left: -150px;
+}
+
+/* Bolinha azul de baixo */
+body::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(135deg, #08b6ee, #087fd3);
+    border-radius: 50%;
+    bottom: -150px;
+    right: -120px;
+}
+
+/* Caixa principal */
+.dashboard {
+    position: relative;
+    z-index: 1;
+    width: 800px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+
+    /* Sombra do dashboard */
+    box-shadow: 0 20px 50px #0050822e;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.title h1 {
+    color: #087fd3;
+    font-size: 28px;
+}
+
+.title p {
+    margin-top: 4px;
+    color: #718b9a;
+    font-size: 14px;
+}
+
+/* Perfil */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #087fd3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Menu do perfil */
+.profile-menu {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: 180px;
+    padding: 7px;
+    display: none;
+    background: white;
+    border: 1px solid #dfebf2;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #00508226;
+    z-index: 10;
+}
+
+.profile-menu.open {
+    display: block;
+}
+
+.profile-menu button {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    background: white;
+    color: #31566b;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Cards com os indicadores */
+.summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.card {
+    flex: 1;
+    padding: 18px;
+    background: #f8fcfe;
+    border: 1px solid #dfebf2;
+    border-radius: 12px;
+}
+
+.card p {
+    margin-bottom: 8px;
+    color: #718b9a;
+    font-size: 13px;
+}
+
+.card strong {
+    color: #16415d;
+    font-size: 23px;
+}
+
+/* Área de informações */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+/* Caixas */
+.box {
+    padding: 20px;
+    background: white;
+    border: 1px solid #dfebf2;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    color: #16415d;
+    font-size: 18px;
+}
+
+/* Informações gerais */
+.info,
+.item,
+.student {
+    min-height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #edf3f6;
+    color: #526f80;
+}
+
+.info strong,
+.item strong {
+    color: #087fd3;
+}
+
+/* Alunos em situação de atenção */
+.attention {
+    color: #d89400 !important;
+}
+
+/* Informações do aluno */
+.student-name {
+    position: relative;
+    cursor: help;
+}
+
+.student-info {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 170px;
+    padding: 10px;
+    display: none;
+    background: white;
+    border: 1px solid #dfebf2;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px #00508225;
+    font-size: 12px;
+    z-index: 5;
+}
+
+/* Mostra as informações ao passar o mouse */
+.student-name:hover .student-info {
+    display: block;
+}
+
+/* Área de vínculo */
+.form {
+    display: grid;
+    gap: 8px;
+}
+
+.form label {
+    color: #526f80;
+    font-size: 13px;
+}
+
+.form select {
+    padding: 10px;
+    border: 1px solid #d6e2ea;
+    border-radius: 8px;
+    background: white;
+}
+
+/* Botão de salvar */
+.save {
+    margin-top: 8px;
+    padding: 11px;
+    border: none;
+    border-radius: 8px;
+    background: #087fd3;
+    color: white;
+    cursor: pointer;
+}
+
+.save:hover {
+    background: #066fb9;
+}
+
+/* Área de alertas */
+.alert {
+    padding: 12px;
+    border-radius: 9px;
+    background: #fff8e8;
+    color: #a86d00;
+}
+
+/* Responsividade */
+@media (max-width: 650px) {
+
+    body {
+        padding: 12px;
+        align-items: flex-start;
+        overflow: auto;
+    }
+
+    .dashboard {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Coloca os conteúdos um abaixo do outro */
+    .summary,
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .user {
+        display: none;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+}

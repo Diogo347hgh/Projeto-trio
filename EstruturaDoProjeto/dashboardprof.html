@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guigstrak - Professor</title>
+
+    <link rel="stylesheet" href="/EstruturaDoProjeto/CSS/dashboardprofessor.css">
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <header>
+            <div class="title">
+                <h1>Guigstrak</h1>
+                <p>Dashboard do Professor</p>
+            </div>
+
+            <div class="profile">
+                <button class="avatar" id="profileBtn">P</button>
+
+                <div class="user">
+                    <strong>Professor</strong>
+                    <small>Bem-vindo!</small>
+                </div>
+
+                <div class="profile-menu" id="profileMenu">
+                    <button id="changeAccount">
+                        Trocar de conta
+                    </button>
+
+                    <button id="logout">
+                        Sair
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <section class="summary">
+
+            <div class="card">
+                <p>Minhas turmas</p>
+                <strong>4</strong>
+            </div>
+
+            <div class="card">
+                <p>Média geral</p>
+                <strong>7,2</strong>
+            </div>
+
+            <div class="card">
+                <p>Frequência</p>
+                <strong>89%</strong>
+            </div>
+
+        </section>
+
+        <section class="content">
+
+            <div class="box">
+                <h2>Minhas turmas</h2>
+
+                <div class="turma">
+                    <span>1º A</span>
+                    <strong>Matemática</strong>
+                </div>
+
+                <div class="turma">
+                    <span>1º B</span>
+                    <strong>Matemática</strong>
+                </div>
+
+                <div class="turma">
+                    <span>2º A</span>
+                    <strong>Física</strong>
+                </div>
+
+                <div class="turma">
+                    <span>2º B</span>
+                    <strong>Física</strong>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Ações</h2>
+
+                <button class="action" id="notesBtn">
+                    Registrar notas
+                </button>
+
+                <button class="action" id="frequencyBtn">
+                    Registrar faltas
+                </button>
+            </div>
+
+        </section>
+
+        <section class="box" id="notesArea">
+
+            <h2>Registrar notas</h2>
+
+            <div class="select-area">
+                <label for="classSelect">Turma:</label>
+
+                <select id="classSelect">
+                    <option>1º A - Matemática</option>
+                    <option>1º B - Matemática</option>
+                    <option>2º A - Física</option>
+                    <option>2º B - Física</option>
+                </select>
+            </div>
+
+            <div class="student-input">
+                <span>Pedro Silva</span>
+                <input type="number" min="0" max="10" placeholder="Nota">
+            </div>
+
+            <div class="student-input">
+                <span>Maria Souza</span>
+                <input type="number" min="0" max="10" placeholder="Nota">
+            </div>
+
+            <div class="student-input">
+                <span>João Santos</span>
+                <input type="number" min="0" max="10" placeholder="Nota">
+            </div>
+
+            <button class="save" id="saveNotes">
+                Salvar notas
+            </button>
+
+        </section>
+
+        <section class="box" id="frequencyArea">
+
+            <h2>Registrar faltas</h2>
+
+            <div class="select-area">
+                <label for="frequencyClass">
+                    Turma:
+                </label>
+
+                <select id="frequencyClass">
+                    <option>1º A - Matemática</option>
+                    <option>1º B - Matemática</option>
+                    <option>2º A - Física</option>
+                    <option>2º B - Física</option>
+                </select>
+            </div>
+
+            <div class="student-frequency">
+                <span>Pedro Silva</span>
+
+                <select>
+                    <option>Presente</option>
+                    <option>Falta</option>
+                </select>
+            </div>
+
+            <div class="student-frequency">
+                <span>Maria Souza</span>
+
+                <select>
+                    <option>Presente</option>
+                    <option>Falta</option>
+                </select>
+            </div>
+
+            <div class="student-frequency">
+                <span>João Santos</span>
+
+                <select>
+                    <option>Presente</option>
+                    <option>Falta</option>
+                </select>
+            </div>
+
+            <button class="save" id="saveFrequency">
+                Salvar frequência
+            </button>
+
+        </section>
+
+        <section class="box students">
+
+            <h2>Alunos da turma</h2>
+
+            <div class="student">
+                <span class="student-name">
+                    Pedro Silva
+
+                    <span class="student-info">
+                        Turma: 1º A<br>
+                        Média: 7,0<br>
+                        Frequência: 92%
+                    </span>
+                </span>
+
+                <strong>7,0</strong>
+            </div>
+
+            <div class="student">
+                <span class="student-name">
+                    Maria Souza
+
+                    <span class="student-info">
+                        Turma: 1º A<br>
+                        Média: 8,0<br>
+                        Frequência: 95%
+                    </span>
+                </span>
+
+                <strong>8,0</strong>
+            </div>
+
+            <div class="student">
+                <span class="student-name">
+                    João Santos
+
+                    <span class="student-info">
+                        Turma: 1º A<br>
+                        Média: 6,5<br>
+                        Frequência: 81%
+                    </span>
+                </span>
+
+                <strong>6,5</strong>
+            </div>
+
+        </section>
+
+        <section class="box">
+
+            <h2>Alertas</h2>
+
+            <div class="alert">
+                Nenhum aluno em atenção.
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../EstruturaDoProjeto/JS/dashboardprofessor.js"></script>
+
+</body>
+
+</html>

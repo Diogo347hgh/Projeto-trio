@@ -1,0 +1,252 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #eef8ff;
+
+    /* Bolinhas do fundo */
+    background-image: radial-gradient(#06344e6c 1.5px, transparent 1.5px);
+    background-size: 25px 25px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Bolinha azul de cima */
+body::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #08b6ee, #087fd3);
+    border-radius: 50%;
+    top: -180px;
+    left: -150px;
+}
+
+/* Bolinha azul de baixo */
+body::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(135deg, #08b6ee, #087fd3);
+    border-radius: 50%;
+    bottom: -150px;
+    right: -120px;
+}
+
+/* Caixa principal do dashboard */
+.dashboard {
+    position: relative;
+    z-index: 1;
+    width: 800px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+
+    /* Sombra do dashboard */
+    box-shadow: 0 20px 50px #0050822e;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.title h1 {
+    color: #087fd3;
+    font-size: 28px;
+}
+
+.title p {
+    margin-top: 4px;
+    color: #718b9a;
+    font-size: 14px;
+}
+
+/* Área do perfil */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #087fd3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Menu que aparece ao clicar no perfil */
+.profile-menu {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: 180px;
+    padding: 7px;
+    display: none;
+    background: white;
+    border: 1px solid #dfebf2;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #00508226;
+    z-index: 10;
+}
+
+/* O JavaScript usa essa classe para mostrar o menu */
+.profile-menu.open {
+    display: block;
+}
+
+.profile-menu button {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    background: white;
+    color: #31566b;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Cards de média, frequência e situação */
+.summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.card {
+    flex: 1;
+    padding: 18px;
+    background: #f8fcfe;
+    border: 1px solid #dfebf2;
+    border-radius: 12px;
+}
+
+.card p {
+    margin-bottom: 8px;
+    color: #718b9a;
+    font-size: 13px;
+}
+
+.card strong {
+    color: #16415d;
+    font-size: 23px;
+}
+
+.card .regular {
+    color: #05a879;
+    font-size: 16px;
+}
+
+/* Área das notas e alertas */
+.content {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 18px;
+}
+
+/* Caixas de conteúdo */
+.box {
+    padding: 20px;
+    background: white;
+    border: 1px solid #dfebf2;
+    border-radius: 12px;
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    color: #16415d;
+    font-size: 18px;
+}
+
+/* Lista de notas */
+.nota {
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #edf3f6;
+    color: #526f80;
+    font-size: 14px;
+}
+
+.nota:last-child {
+    border-bottom: none;
+}
+
+.nota strong {
+    color: #087fd3;
+}
+
+/* Área de alerta */
+.alert {
+    padding: 12px;
+    border-radius: 9px;
+    background: #f2fcf8;
+    color: #05a879;
+}
+
+/* Resumo final */
+.final {
+    margin-top: 18px;
+}
+
+.final p {
+    color: #718b9a;
+    font-size: 13px;
+}
+
+/* Responsividade */
+@media (max-width: 650px) {
+
+    body {
+        padding: 12px;
+        align-items: flex-start;
+        overflow: auto;
+    }
+
+    .dashboard {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Coloca os cards um abaixo do outro */
+    .summary,
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ajuste para celulares pequenos */
+@media (max-width: 430px) {
+
+    .user {
+        display: none;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+}

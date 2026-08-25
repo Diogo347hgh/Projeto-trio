@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guigstrak - Dashboard</title>
+    <link rel="stylesheet" href="/EstruturaDoProjeto/CSS/dashboardaluno.css">
+</head>
+
+<body>
+
+    <!-- Parte principal do dashboard -->
+    <main class="dashboard">
+
+        <!-- Cabeçalho da página -->
+        <header>
+
+            <!-- Título do sistema -->
+            <div class="title">
+                <h1>Guigstrak</h1>
+                <p>Dashboard</p>
+            </div>
+
+            <!-- Área do perfil do usuário -->
+            <div class="profile">
+
+                <!-- Botão com a inicial do usuário -->
+                <button class="avatar" id="profileBtn">G</button>
+
+                <!-- Informações do usuário -->
+                <div class="user">
+                    <strong>Aluno</strong>
+                    <small>Bem-vindo!</small>
+                </div>
+
+                <!-- Menu que aparece ao clicar no perfil -->
+                <div class="profile-menu" id="profileMenu">
+
+                    <!-- Botão para trocar de conta -->
+                    <button id="changeAccount">
+                        <span>↔</span>
+                        Trocar de conta
+                    </button>
+
+                    <!-- Botão para sair da conta -->
+                    <button id="logout">
+                        <span>↪</span>
+                        Sair
+                    </button>
+
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Área com os principais dados do aluno -->
+        <section class="summary">
+
+            <!-- Card da média geral -->
+            <div class="card">
+                <p>Média geral</p>
+                <strong>7,4</strong>
+            </div>
+
+            <!-- Card da frequência -->
+            <div class="card">
+                <p>Frequência</p>
+                <strong>91%</strong>
+            </div>
+
+            <!-- Card da situação do aluno -->
+            <div class="card">
+                <p>Situação</p>
+                <strong class="regular">Regular</strong>
+            </div>
+
+        </section>
+
+
+        <!-- Área com as notas e alertas -->
+        <section class="content">
+
+            <!-- Caixa com as notas -->
+            <div class="box">
+
+                <h2>Minhas notas</h2>
+
+                <!-- Nota de Matemática -->
+                <div class="nota">
+                    <span>Matemática</span>
+                    <strong>7,0</strong>
+                </div>
+
+                <!-- Nota de Física -->
+                <div class="nota">
+                    <span>Física</span>
+                    <strong>8,0</strong>
+                </div>
+
+                <!-- Nota de Programação -->
+                <div class="nota">
+                    <span>Programação</span>
+                    <strong>8,6</strong>
+                </div>
+
+                <!-- Nota de Banco de Dados -->
+                <div class="nota">
+                    <span>Banco de Dados</span>
+                    <strong>6,8</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Caixa com os alertas -->
+            <div class="box">
+
+                <h2>Alertas</h2>
+
+                <!-- Mensagem quando não existem alertas -->
+                <div class="alert">
+                    <div>
+                        <strong>Nenhum alerta</strong>
+                        <p>Nenhum alerta acadêmico.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Caixa final com um resumo do desempenho -->
+        <section class="box final">
+
+            <h2>Resumo</h2>
+
+            <p>Seu desempenho está regular.</p>
+
+        </section>
+
+    </main>
+
+    <script src="/EstruturaDoProjeto/JS/dashboardaluno.js"></script>
+
+</body>
+
+</html>
