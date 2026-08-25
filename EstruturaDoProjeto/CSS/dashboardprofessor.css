@@ -47,7 +47,7 @@ body::after {
     right: -120px;
 }
 
-/* Caixa principal do dashboard */
+/* Caixa principal */
 .dashboard {
     position: relative;
     z-index: 1;
@@ -79,7 +79,7 @@ header {
     font-size: 14px;
 }
 
-/* Área do perfil */
+/* Perfil */
 .profile {
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ header {
     cursor: pointer;
 }
 
-/* Menu que aparece ao clicar no perfil */
+/* Menu do perfil */
 .profile-menu {
     position: absolute;
     top: 52px;
@@ -113,7 +113,6 @@ header {
     z-index: 10;
 }
 
-/* O JavaScript usa essa classe para mostrar o menu */
 .profile-menu.open {
     display: block;
 }
@@ -128,7 +127,7 @@ header {
     cursor: pointer;
 }
 
-/* Cards de média, frequência e situação */
+/* Cards */
 .summary {
     display: flex;
     gap: 15px;
@@ -154,24 +153,20 @@ header {
     font-size: 23px;
 }
 
-.card .regular {
-    color: #05a879;
-    font-size: 16px;
-}
-
-/* Área das notas e alertas */
+/* Área principal */
 .content {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     gap: 18px;
 }
 
-/* Caixas de conteúdo */
+/* Caixas */
 .box {
     padding: 20px;
     background: white;
     border: 1px solid #dfebf2;
     border-radius: 12px;
+    margin-bottom: 18px;
 }
 
 .box h2 {
@@ -180,41 +175,111 @@ header {
     font-size: 18px;
 }
 
-/* Lista de notas */
-.nota {
-    height: 42px;
+/* Lista de turmas e alunos */
+.turma,
+.student {
+    min-height: 42px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #edf3f6;
     color: #526f80;
-    font-size: 14px;
 }
 
-.nota:last-child {
-    border-bottom: none;
-}
-
-.nota strong {
+.turma strong,
+.student strong {
     color: #087fd3;
 }
 
-/* Área de alerta */
+/* Botões de registrar */
+.action {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #087fd3;
+    color: white;
+    cursor: pointer;
+}
+
+.action:hover {
+    background: #066fb9;
+}
+
+/* Áreas abertas pelo JavaScript */
+#notesArea,
+#frequencyArea {
+    display: none;
+}
+
+/* Campos para registrar notas */
+.student-input,
+.student-frequency {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #edf3f6;
+}
+
+.student-input input {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid #d6e2ea;
+    border-radius: 7px;
+}
+
+/* Seleção de presença */
+.student-frequency select {
+    padding: 7px;
+    border: 1px solid #d6e2ea;
+    border-radius: 7px;
+}
+
+/* Botão salvar */
+.save {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #087fd3;
+    color: white;
+    cursor: pointer;
+}
+
+/* Informações que aparecem ao passar o mouse */
+.student-name {
+    position: relative;
+    cursor: help;
+}
+
+.student-info {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    width: 170px;
+    padding: 10px;
+    display: none;
+    background: white;
+    border: 1px solid #dfebf2;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px #00508225;
+    font-size: 12px;
+    z-index: 5;
+}
+
+/* Mostra as informações do aluno */
+.student-name:hover .student-info {
+    display: block;
+}
+
+/* Alerta */
 .alert {
     padding: 12px;
     border-radius: 9px;
     background: #f2fcf8;
     color: #05a879;
-}
-
-/* Resumo final */
-.final {
-    margin-top: 18px;
-}
-
-.final p {
-    color: #718b9a;
-    font-size: 13px;
 }
 
 /* Responsividade */
@@ -231,7 +296,7 @@ header {
         padding: 20px;
     }
 
-    /* Coloca os cards um abaixo do outro */
+    /* Organiza tudo em uma coluna no celular */
     .summary,
     .content {
         display: grid;
@@ -239,7 +304,6 @@ header {
     }
 }
 
-/* Ajuste para celulares pequenos */
 @media (max-width: 430px) {
 
     .user {

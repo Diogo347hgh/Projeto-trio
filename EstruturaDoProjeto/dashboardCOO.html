@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guigstrak - Coordenador</title>
+    <link rel="stylesheet" href="/EstruturaDoProjeto/CSS/dashboardCOO.css">
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <!-- Cabeçalho -->
+
+        <header>
+
+            <div class="title">
+                <h1>Guigstrak</h1>
+                <p>Dashboard do Coordenador</p>
+            </div>
+
+            <div class="profile">
+
+                <button class="avatar" id="profileBtn">C</button>
+
+                <div class="user">
+                    <strong>Coordenador</strong>
+                    <small>Bem-vindo!</small>
+                </div>
+
+                <div class="profile-menu" id="profileMenu">
+
+                    <button id="changeAccount">
+                        Trocar de conta
+                    </button>
+
+                    <button id="logout">
+                        Sair
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- RESUMO -->
+
+        <section class="summary">
+
+            <div class="card">
+                <p>Alunos</p>
+                <strong>120</strong>
+            </div>
+
+            <div class="card">
+                <p>Professores</p>
+                <strong>15</strong>
+            </div>
+
+            <div class="card">
+                <p>Turmas</p>
+                <strong>8</strong>
+            </div>
+
+        </section>
+
+
+        <!-- INDICADORES -->
+
+        <section class="content">
+
+            <div class="box">
+
+                <h2>Indicadores</h2>
+
+                <div class="info">
+                    <span>Média geral</span>
+                    <strong>7,4</strong>
+                </div>
+
+                <div class="info">
+                    <span>Frequência geral</span>
+                    <strong>91%</strong>
+                </div>
+
+                <div class="info">
+                    <span>Alunos em atenção</span>
+                    <strong class="attention">5</strong>
+                </div>
+
+            </div>
+
+
+            <!-- TURMAS -->
+
+            <div class="box">
+
+                <h2>Turmas</h2>
+
+                <div class="item">
+                    <span>1º A</span>
+                    <strong>30 alunos</strong>
+                </div>
+
+                <div class="item">
+                    <span>1º B</span>
+                    <strong>28 alunos</strong>
+                </div>
+
+                <div class="item">
+                    <span>2º A</span>
+                    <strong>32 alunos</strong>
+                </div>
+
+                <div class="item">
+                    <span>2º B</span>
+                    <strong>30 alunos</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ALUNOS EM ATENÇÃO -->
+
+        <section class="box">
+
+            <h2>Alunos em atenção</h2>
+
+            <div class="student">
+
+                <span class="student-name">
+                    Pedro Silva
+
+                    <span class="student-info">
+                        Turma: 1º A<br>
+                        Média: 4,5<br>
+                        Frequência: 72%
+                    </span>
+                </span>
+
+                <strong class="attention">Atenção</strong>
+
+            </div>
+
+
+            <div class="student">
+
+                <span class="student-name">
+                    Maria Souza
+
+                    <span class="student-info">
+                        Turma: 1º B<br>
+                        Média: 5,2<br>
+                        Frequência: 79%
+                    </span>
+                </span>
+
+                <strong class="attention">Atenção</strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- VÍNCULOS -->
+
+        <section class="box">
+
+            <h2>Vincular professor</h2>
+
+            <div class="form">
+
+                <label for="teacher">
+                    Professor
+                </label>
+
+                <select id="teacher">
+
+                    <option>João Silva</option>
+                    <option>Maria Santos</option>
+                    <option>Carlos Oliveira</option>
+
+                </select>
+
+
+                <label for="class">
+                    Turma
+                </label>
+
+                <select id="class">
+
+                    <option>1º A</option>
+                    <option>1º B</option>
+                    <option>2º A</option>
+                    <option>2º B</option>
+
+                </select>
+
+
+                <label for="subject">
+                    Disciplina
+                </label>
+
+                <select id="subject">
+
+                    <option>Matemática</option>
+                    <option>Física</option>
+                    <option>Programação</option>
+                    <option>Banco de Dados</option>
+
+                </select>
+
+                <button class="save" id="linkBtn">
+                    Vincular
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ALERTAS -->
+
+        <section class="box">
+
+            <h2>Alertas</h2>
+
+            <div class="alert">
+                5 alunos precisam de acompanhamento.
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="/EstruturaDoProjeto/JS/dashboardCOO.js"></script>
+
+</body>
+
+</html>

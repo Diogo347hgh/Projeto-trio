@@ -1,138 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>Guigstrak - Dashboard</title>
 
-    <title>Guigstrack - Dashboard</title>
-
-    <link rel="stylesheet"
-          href="CSS/dashboardaluno.css">
-
-    <script src="JS/dashboardaluno.js"
-            defer></script>
-
+    <link rel="stylesheet" href="/EstruturaDoProjeto/CSS/dashboardaluno.css">
 </head>
 
 <body>
 
-
-    <!-- =========================
-         MENU LATERAL
-    ========================== -->
-
-    <aside class="sidebar">
-
-        <div class="logo">
-
-            <h1>Guigstrack</h1>
-
-            <span>Área do aluno</span>
-
-        </div>
-
-
-        <nav>
-
-            <button class="ativo">
-                🏠 Dashboard
-            </button>
-
-            <button>
-                📊 Minhas notas
-            </button>
-
-            <button>
-                📅 Frequência
-            </button>
-
-            <button>
-                📝 Atividades
-            </button>
-
-        </nav>
-
-    </aside>
-
-
-    <!-- =========================
-         CONTEÚDO PRINCIPAL
-    ========================== -->
-
-    <main class="conteudo">
-
+    <main class="dashboard">
 
         <!-- CABEÇALHO -->
 
         <header>
 
-            <div class="boas-vindas">
-
-                <h2 id="saudacao">
-                    Olá! 👋
-                </h2>
-
-                <p>
-                    Acompanhe seu desempenho escolar.
-                </p>
-
+            <div class="title">
+                <h1>Guigstrak</h1>
+                <p>Dashboard</p>
             </div>
 
+            <!-- PERFIL -->
 
-            <!-- USUÁRIO -->
+            <div class="profile">
 
-            <div class="usuario">
-
-                <div class="avatar"
-                     id="avatar">
-
-                    A
-
-                </div>
-
-
-                <div class="dados-usuario">
-
-                    <strong id="nomeUsuario">
-                        Aluno
-                    </strong>
-
-                    <small>
-                        Aluno
-                    </small>
-
-                </div>
-
-
-                <button
-                    class="btn-opcoes"
-                    id="btnOpcoes">
-
-                    ⋮
-
+                <button class="avatar" id="profileBtn">
+                    G
                 </button>
 
+                <div class="user">
+                    <strong>Aluno</strong>
+                    <small>Bem-vindo!</small>
+                </div>
 
-                <!-- MENU -->
+                <!-- MENU DO PERFIL -->
 
-                <div
-                    class="menu-usuario"
-                    id="menuUsuario">
+                <div class="profile-menu" id="profileMenu">
 
-                    <button id="perfil">
-                        👤 Meu perfil
+                    <button id="changeAccount">
+                        <span>↔</span>
+                        Trocar de conta
                     </button>
 
-                    <button id="configuracoes">
-                        ⚙️ Configurações
-                    </button>
-
-                    <button id="sair">
-                        🚪 Sair
+                    <button id="logout">
+                        <span>↪</span>
+                        Sair
                     </button>
 
                 </div>
@@ -142,390 +57,115 @@
         </header>
 
 
-        <!-- =========================
-             CARDS
-        ========================== -->
+        <!-- RESUMO -->
 
-        <section class="cards">
-
+        <section class="summary">
 
             <div class="card">
 
-                <div class="icone azul">
-                    ⭐
-                </div>
+                <p>Média geral</p>
 
-                <div>
-
-                    <span>
-                        Média geral
-                    </span>
-
-                    <h3 id="mediaGeral">
-                        0,0
-                    </h3>
-
-                </div>
+                <strong>7,4</strong>
 
             </div>
 
 
             <div class="card">
 
-                <div class="icone verde">
-                    📅
-                </div>
+                <p>Frequência</p>
 
-                <div>
-
-                    <span>
-                        Frequência
-                    </span>
-
-                    <h3 id="frequencia">
-                        0%
-                    </h3>
-
-                </div>
+                <strong>91%</strong>
 
             </div>
 
 
             <div class="card">
 
-                <div class="icone vermelho">
-                    ❌
-                </div>
+                <p>Situação</p>
 
-                <div>
-
-                    <span>
-                        Faltas
-                    </span>
-
-                    <h3 id="totalFaltas">
-                        0
-                    </h3>
-
-                </div>
-
-            </div>
-
-
-            <div class="card">
-
-                <div class="icone roxo">
-                    📝
-                </div>
-
-                <div>
-
-                    <span>
-                        Atividades
-                    </span>
-
-                    <h3 id="atividadesConcluidas">
-                        0
-                    </h3>
-
-                </div>
-
-            </div>
-
-
-        </section>
-
-
-        <!-- =========================
-             NOTAS
-        ========================== -->
-
-        <section class="box">
-
-            <div class="box-cabecalho">
-
-                <div>
-
-                    <h2>
-                        📊 Minhas notas
-                    </h2>
-
-                    <p>
-                        Acompanhe suas notas por disciplina.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="tabela">
-
-
-                <div class="linha cabecalho">
-
-                    <span>
-                        Disciplina
-                    </span>
-
-                    <span>
-                        1º Bimestre
-                    </span>
-
-                    <span>
-                        2º Bimestre
-                    </span>
-
-                    <span>
-                        Média
-                    </span>
-
-                </div>
-
-
-                <div class="linha">
-
-                    <strong>
-                        Programação
-                    </strong>
-
-                    <span id="prog1">
-                        0,0
-                    </span>
-
-                    <span id="prog2">
-                        0,0
-                    </span>
-
-                    <strong id="progMedia">
-                        0,0
-                    </strong>
-
-                </div>
-
-
-                <div class="linha">
-
-                    <strong>
-                        Banco de Dados
-                    </strong>
-
-                    <span id="bd1">
-                        0,0
-                    </span>
-
-                    <span id="bd2">
-                        0,0
-                    </span>
-
-                    <strong id="bdMedia">
-                        0,0
-                    </strong>
-
-                </div>
-
-
-                <div class="linha">
-
-                    <strong>
-                        HTML e CSS
-                    </strong>
-
-                    <span id="html1">
-                        0,0
-                    </span>
-
-                    <span id="html2">
-                        0,0
-                    </span>
-
-                    <strong id="htmlMedia">
-                        0,0
-                    </strong>
-
-                </div>
-
-
-                <div class="linha">
-
-                    <strong>
-                        JavaScript
-                    </strong>
-
-                    <span id="js1">
-                        0,0
-                    </span>
-
-                    <span id="js2">
-                        0,0
-                    </span>
-
-                    <strong id="jsMedia">
-                        0,0
-                    </strong>
-
-                </div>
-
+                <strong class="regular">
+                     Regular
+                </strong>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             PARTE INFERIOR
-        ========================== -->
+        <!-- CONTEÚDO -->
 
-        <section class="duas-colunas">
+        <section class="content">
 
-
-            <!-- FALTAS -->
+            <!-- NOTAS -->
 
             <div class="box">
 
-                <h2>
-                    📅 Minhas faltas
-                </h2>
+                <h2>Minhas notas</h2>
 
-                <div class="faltas-lista">
+                <div class="nota">
+                    <span>Matemática</span>
+                    <strong>7,0</strong>
+                </div>
 
+                <div class="nota">
+                    <span>Física</span>
+                    <strong>8,0</strong>
+                </div>
 
-                    <div class="item-falta">
+                <div class="nota">
+                    <span>Programação</span>
+                    <strong>8,6</strong>
+                </div>
 
-                        <span>
-                            Programação
-                        </span>
-
-                        <strong id="faltaProgramacao">
-                            0
-                        </strong>
-
-                    </div>
-
-
-                    <div class="item-falta">
-
-                        <span>
-                            Banco de Dados
-                        </span>
-
-                        <strong id="faltaBanco">
-                            0
-                        </strong>
-
-                    </div>
-
-
-                    <div class="item-falta">
-
-                        <span>
-                            HTML e CSS
-                        </span>
-
-                        <strong id="faltaHtml">
-                            0
-                        </strong>
-
-                    </div>
-
-
-                    <div class="item-falta">
-
-                        <span>
-                            JavaScript
-                        </span>
-
-                        <strong id="faltaJavascript">
-                            0
-                        </strong>
-
-                    </div>
-
-
+                <div class="nota">
+                    <span>Banco de Dados</span>
+                    <strong>6,8</strong>
                 </div>
 
             </div>
 
 
-            <!-- ATIVIDADES -->
+            <!-- ALERTAS -->
 
             <div class="box">
 
-                <h2>
-                    📝 Atividades recentes
-                </h2>
+                <h2>Alertas</h2>
 
+                <div class="alert">
 
-                <div class="atividade">
-
-                    <div>
-
-                        <strong>
-                            Projeto JavaScript
-                        </strong>
-
-                        <small>
-                            JavaScript
-                        </small>
-
-                    </div>
-
-                    <span class="concluida">
-                        Concluída
-                    </span>
-
-                </div>
-
-
-                <div class="atividade">
+                
 
                     <div>
+                        <strong>Nenhum alerta</strong>
 
-                        <strong>
-                            Banco de Dados
-                        </strong>
-
-                        <small>
-                            Banco de Dados
-                        </small>
-
+                        <p>
+                            Nenhum alerta acadêmico.
+                        </p>
                     </div>
 
-                    <span class="pendente">
-                        Pendente
-                    </span>
-
                 </div>
-
-
-                <div class="atividade">
-
-                    <div>
-
-                        <strong>
-                            Página HTML
-                        </strong>
-
-                        <small>
-                            HTML e CSS
-                        </small>
-
-                    </div>
-
-                    <span class="concluida">
-                        Concluída
-                    </span>
-
-                </div>
-
 
             </div>
 
-
         </section>
 
+
+        <!-- RESUMO FINAL -->
+
+        <section class="box final">
+
+            <h2>Resumo</h2>
+
+            <p>
+                Seu desempenho está regular.
+            </p>
+
+        </section>
 
     </main>
+
+
+    <script src="/EstruturaDoProjeto/JS/dashboardaluno.js"></script>
 
 </body>
 
