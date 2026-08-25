@@ -1,3 +1,4 @@
+/* Configurações gerais */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
 }
 
+/* Fundo da página */
 body {
     min-height: 100vh;
     display: flex;
@@ -12,37 +14,42 @@ body {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #eef8ff;
-    /* bolinhas */
-    background-image: radial-gradient( #06344e6c 1.5px, transparent 1.5px);
+
+    /* Bolinhas do fundo */
+    background-image: radial-gradient(#06344e6c 1.5px, transparent 1.5px);
     background-size: 25px 25px;
+
     position: relative;
     overflow: hidden;
 }
 
+/* Bolinha azul do canto superior */
 body::before {
     content: "";
     position: absolute;
     width: 350px;
     height: 350px;
-    background: linear-gradient( 135deg, #08b6ee, #087fd3);
+    background: linear-gradient(135deg, #08b6ee, #087fd3);
     border-radius: 50%;
     top: -180px;
     left: -150px;
     opacity: 0.9;
 }
 
+/* Bolinha azul do canto inferior */
 body::after {
     content: "";
     position: absolute;
     width: 280px;
     height: 280px;
-    background: linear-gradient( 135deg, #08b6ee, #087fd3);
+    background: linear-gradient(135deg, #08b6ee, #087fd3);
     border-radius: 50%;
     bottom: -150px;
     right: -120px;
     opacity: 0.8;
 }
 
+/* Título */
 h1 {
     position: absolute;
     top: 40px;
@@ -55,6 +62,7 @@ h1 {
     white-space: nowrap;
 }
 
+/* Caixa do formulário */
 form {
     position: relative;
     z-index: 1;
@@ -64,9 +72,13 @@ form {
     padding: 40px;
     background: rgba(255, 255, 255, 0.97);
     border-radius: 22px;
-    box-shadow: 0 20px 50px rgba(0, 80, 130, 0.18), 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    /* Sombra da caixa */
+    box-shadow: 0 20px 50px rgba(0, 80, 130, 0.18), 
+                0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
+/* Título dentro do formulário */
 h2 {
     margin-bottom: 30px;
     color: #16415d;
@@ -74,6 +86,7 @@ h2 {
     font-weight: 600;
 }
 
+/* Textos dos campos */
 label {
     display: inline-block;
     margin-bottom: 7px;
@@ -82,6 +95,7 @@ label {
     font-weight: 600;
 }
 
+/* Campos de texto e seleção */
 input, select {
     width: 100%;
     height: 45px;
@@ -93,49 +107,61 @@ input, select {
     color: #263f4c;
     font-size: 14px;
     outline: none;
+
+    /* Efeito quando clica no campo */
     transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
+/* Quando o campo está selecionado */
 input:focus, select:focus {
     border-color: #08a8e8;
     background-color: white;
     box-shadow: 0 0 0 3px rgba(8, 168, 232, 0.12);
 }
 
+/* Faz o select mostrar a mão */
 select {
     cursor: pointer;
 }
 
+/* Espaçamento dos campos que aparecem pelo JavaScript */
 #professor, #aluno, #coordenador {
     margin-top: 10px;
     padding-top: 5px;
 }
 
+/* Botão */
 button {
     width: 100%;
     height: 48px;
     margin-top: 15px;
     border: none;
     border-radius: 11px;
-    background: linear-gradient( 90deg, #05d19b , #034b38);
+    background: linear-gradient(90deg, #05d19b, #034b38);
     color: white;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+
+    /* Sombra do botão */
     box-shadow: 0 8px 18px rgba(8, 126, 211, 0.658);
+
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+/* Efeito quando passa o mouse no botão */
 button:hover {
     transform: translateY(-2px);
     box-shadow:
         0 12px 22px rgb(8, 126, 211);
 }
 
+/* Efeito quando clica no botão */
 button:active {
     transform: translateY(0);
 }
 
+/* Barra de rolagem do formulário */
 form::-webkit-scrollbar {
     width: 6px;
 }
@@ -145,11 +171,14 @@ form::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
+/* Responsividade para telas menores */
 @media (max-width: 600px) {
+
     body {
         padding: 20px;
     }
 
+    /* Ajusta o título no celular */
     h1 {
         position: relative;
         top: auto;
@@ -159,6 +188,7 @@ form::-webkit-scrollbar-thumb {
         font-size: 26px;
     }
 
+    /* Ajusta o formulário */
     form {
         width: 100%;
         max-height: none;
@@ -166,6 +196,7 @@ form::-webkit-scrollbar-thumb {
         border-radius: 18px;
     }
 
+    /* Diminui a bolinha de cima */
     body::before {
         width: 220px;
         height: 220px;
@@ -173,6 +204,7 @@ form::-webkit-scrollbar-thumb {
         left: -100px;
     }
 
+    /* Diminui a bolinha de baixo */
     body::after {
         width: 200px;
         height: 200px;
