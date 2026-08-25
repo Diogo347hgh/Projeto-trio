@@ -1,0 +1,15 @@
+Dashboard do aluno: foi criado para o aluno apenas acompanhar seu desempenho. Ele consegue visualizar notas, frequência, média geral, situação acadêmica e alertas, mas não pode alterar essas informações.
+
+Dashboard do professor: mantém o mesmo visual do aluno, porém adiciona as funções necessárias para o professor. Ele consegue visualizar suas turmas e alunos, registrar notas e faltas e consultar informações básicas de cada aluno ao passar o mouse sobre o nome.
+
+Dashboard do coordenador: também utiliza o mesmo padrão visual, mas possui uma visão geral da unidade. O coordenador consegue consultar alunos, professores e turmas, acompanhar médias, frequência e alertas, além de realizar os vínculos entre professor, turma e disciplina.
+
+Visual: os três dashboards utilizam o mesmo estilo para manter a identidade do Guigstrak: fundo azul claro, bolinhas, círculos decorativos, painel branco, cards simples e poucas informações na tela.
+
+JavaScript: foi utilizado somente para as interações necessárias, como abrir o menu do perfil, trocar de conta, sair, abrir o registro de notas/faltas e mostrar informações dos alunos.
+
+A ideia principal foi deixar a divisão de funções bem clara:
+
+Aluno → consulta seus dados.
+Professor → registra e acompanha suas turmas.
+Coordenador → acompanha e administra a unidade.
