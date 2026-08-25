@@ -1,378 +1,459 @@
-🎓 EduTrack
+Claro. Agora que vocês definiram que Notas, Frequência, Evolução e Alertas ficarão dentro do Dashboard, e que um professor pode estar vinculado a várias turmas e disciplinas, eu reorganizaria o planejamento para ficar mais coerente com o projeto.
 
- "Sistema de Monitoramento do Desempenho Acadêmico de Estudantes"
+📅 Planejamento do Projeto — EduTrack
+🟦 Semana 1 — Estrutura e Interface
+📁 Estrutura do projeto
+Criar as pastas do projeto.
+Criar os arquivos HTML.
+Criar style.css.
+Criar responsivo.css.
+Criar a identidade visual do EduTrack.
+Definir fontes, cores, botões e componentes principais.
+🔐 Login
 
-## 👥 Equipe
+Criar:
 
-Gregori
-Guilherme
-Diogo
+Tela de login.
+Campo de e-mail.
+Campo de senha.
+Validação dos campos.
+Redirecionamento para o Dashboard.
+Controle inicial do tipo de usuário.
+📝 Cadastro
 
-📌 Sobre o Projeto
+Criar:
 
-O **Guigstrack** é um sistema desenvolvido para auxiliar instituições de ensino no acompanhamento do desempenho acadêmico dos estudantes.
+Cadastro de nome.
+E-mail.
+Senha.
+Confirmação de senha.
+Tipo de usuário.
 
-A proposta surgiu a partir do desafio de que muitos sistemas acadêmicos são utilizados principalmente para armazenar informações como *notas e frequência*, mas nem sempre oferecem uma análise integrada desses dados.
+Campos específicos:
 
-O EduTrack busca transformar essas informações em dados mais fáceis de visualizar e interpretar, auxiliando professores e coordenadores na identificação de alunos que possam necessitar de acompanhamento pedagógico.
+Aluno
 
- 🎯 Objetivo Geral
+Matrícula.
+Curso.
+Turma.
+Unidade.
+Turno.
 
-Desenvolver uma plataforma simples e intuitiva capaz de monitorar e analisar o desempenho acadêmico dos estudantes, utilizando informações como notas, frequência e evolução para auxiliar na tomada de decisões pedagógicas.
+Professor
 
- 🎯 Objetivos Específicos
+Matrícula funcional.
+Unidade.
 
-* 📊 Facilitar o acompanhamento do desempenho dos alunos.
-* 📈 Permitir visualizar a evolução das notas ao longo do período.
-* 📅 Controlar a frequência dos estudantes.
-* 🚨 Identificar alunos que apresentam possíveis dificuldades.
-* 🔎 Facilitar a consulta das informações acadêmicas.
-* 👨‍🏫 Auxiliar professores no acompanhamento de suas turmas.
-* 👨‍💼 Auxiliar coordenadores na tomada de decisões.
-* 💻 Criar uma interface simples e fácil de utilizar.
-* 🔐 Trabalhar com os dados dos estudantes respeitando princípios da LGPD.
+Coordenador
 
-## ❗ Problema
+Matrícula funcional.
+Área de coordenação.
+Unidade.
+🟩 Semana 2 — Estrutura Acadêmica
 
-As instituições de ensino normalmente possuem sistemas para registrar notas e frequência dos alunos.
+Criar as informações que serão utilizadas pelo sistema.
 
-Porém, esses sistemas podem funcionar principalmente como ferramentas de armazenamento e consulta, dificultando uma análise mais ampla do desempenho.
-
-Com isso, situações como
-
-* queda gradual das notas
-* baixa frequência
-* dificuldades em determinadas disciplinas
-* baixo desempenho
-
-podem não ser identificadas rapidamente.
-
-O EduTrack busca solucionar esse problema através da organização e análise dos dados acadêmicos.
-
-## 💡 Nossa Solução
-
-O sistema reúne informações acadêmicas em um único ambiente.
-
-O fluxo principal será:
-
-text
-Notas
-   +
-Frequência
-   +
-Evolução do desempenho
-        ↓
-    Análise
-        ↓
-┌─────────────────────┐
-│ Situação do aluno   │
-├─────────────────────┤
-│ 🟢 Regular          │
-│ 🟡 Atenção          │
-│ 🔴 Necessita apoio  │
-└─────────────────────┘
-
-Dessa forma, professores e coordenadores conseguem visualizar de maneira mais rápida quais estudantes podem precisar de acompanhamento.
-
-# 🚀 Funcionalidades
-
-## 🔐 Login
-
-* Login com e-mail e senha.
-* Cadastro de usuários.
-* Controle de acesso conforme o tipo de usuário.
-
-### Tipos de usuário
-
-* 👨‍🎓 **Aluno**
-* 👨‍🏫 **Professor**
-* 👨‍💼 **Coordenador**
-
-## 📊 Dashboard
-
-O painel principal apresentará informações resumidas, como:
-
-* quantidade de alunos;
-* média geral;
-* frequência;
-* alunos que precisam de atenção;
-* indicadores de desempenho.
-
-## 👨‍🎓 Cadastro e consulta de alunos
-
-Será possível:
-
-* cadastrar alunos;
-* consultar alunos;
-* pesquisar alunos;
-* visualizar informações acadêmicas;
-* acessar o perfil individual do estudante.
-
-## 📝 Controle de Notas
-
-Professores poderão registrar as notas dos estudantes.
-
-O sistema poderá calcular automaticamente:
-
-```text
-Nota 1
-+
-Nota 2
-+
-Nota 3
-        ↓
-     Média
-
-A média será utilizada para auxiliar na identificação da situação acadêmica do aluno.
-
-## 📅 Controle de Frequência
-
-Será possível registrar a presença dos alunos e calcular o percentual de frequência.
+🏫 Unidades
 
 Exemplo:
 
-```text
+Unidade A
+Unidade B
+Unidade C
+📚 Cursos
+
+Exemplo:
+
+Desenvolvimento de Sistemas
+Mecânica
+Eletrônica
+Administração
+🏫 Turmas
+
+Exemplo:
+
+1º A
+1º B
+2º A
+2º B
+
+Cada turma estará relacionada a um curso e a uma unidade.
+
+📖 Disciplinas
+
+Exemplo:
+
+Matemática
+Física
+Programação
+Banco de Dados
+🟨 Semana 3 — Professores, Turmas e Disciplinas
+
+Essa etapa será responsável por organizar os vínculos acadêmicos.
+
+Um professor poderá estar em várias turmas e também ensinar mais de uma disciplina.
+
+Exemplo:
+
+João Silva
+
+├── 1º A → Matemática
+├── 1º B → Matemática
+├── 2º A → Matemática
+└── 2º A → Física
+👨‍💼 Coordenador
+
+O coordenador poderá realizar esses vínculos.
+
+Exemplo:
+
+Professor:
+[ João Silva ]
+
+Turma:
+[ 1º A ]
+
+Disciplina:
+[ Matemática ]
+
+[ Vincular ]
+
+O professor não precisará cadastrar suas próprias turmas.
+
+O sistema mostrará automaticamente as turmas e disciplinas vinculadas a ele.
+
+🟧 Semana 4 — Dashboard
+
+Essa será uma das partes principais do projeto.
+
+O Dashboard será diferente dependendo do tipo de usuário.
+
+👨‍🎓 Dashboard do Aluno
+
+Mostrar:
+
+Média geral.
+Frequência.
+Notas por disciplina.
+Evolução das notas.
+Situação acadêmica.
+Alertas.
+
+Exemplo:
+
+Média geral: 7,4
+
+Frequência: 91%
+
+🟢 Situação: Regular
+
+Notas
+├── Matemática: 7,0
+├── Física: 8,0
+└── Informática: 8,6
+
+Alertas
+└── Nenhum alerta
+👨‍🏫 Dashboard do Professor
+
+O professor verá suas turmas:
+
+Minhas turmas
+
+[ 1º A - Matemática ]
+[ 1º B - Matemática ]
+[ 2º A - Matemática ]
+[ 2º A - Física ]
+
+Depois de selecionar uma turma, verá:
+
+Quantidade de alunos.
+Média da turma.
+Frequência da turma.
+Notas.
+Frequência individual.
+Alertas.
+👨‍💼 Dashboard do Coordenador
+
+O coordenador terá uma visão mais ampla da unidade.
+
+Mostrar:
+
+Quantidade de alunos.
+Média geral.
+Frequência média.
+Turmas.
+Professores.
+Alunos em atenção.
+Alunos que necessitam de apoio.
+Indicadores de desempenho.
+🟪 Semana 5 — Notas e Frequência dentro do Dashboard
+
+Em vez de criar páginas separadas para notas e frequência, essas funcionalidades ficarão no Dashboard.
+
+📝 Notas
+
+O professor poderá registrar:
+
+Aluno       N1    N2    N3    Média
+Pedro       5     6     7     6,0
+Maria       8     9     8     8,3
+João        7     7     6     6,6
+
+O sistema calculará automaticamente a média.
+
+N1 + N2 + N3
+      ↓
+    Média
+
+O aluno poderá apenas visualizar suas notas.
+
+O coordenador poderá consultar as notas dos alunos autorizados.
+
+📅 Frequência
+
+O professor poderá registrar a presença dos alunos.
+
+Pedro      ✓
+Maria      ✓
+João       ✗
+Carlos     ✓
+
+O sistema calculará:
+
 Total de aulas: 40
 Presenças: 36
 
 Frequência: 90%
-```
 
-## 🚨 Alertas de Desempenho
+O aluno poderá visualizar sua própria frequência.
 
-O sistema poderá identificar situações que merecem atenção.
+O coordenador poderá acompanhar a frequência das turmas da unidade.
 
-Exemplo:
+🟥 Semana 6 — Análise e Alertas
 
-```text
-🔴 ALUNO EM RISCO
+Depois de termos notas e frequência funcionando, será criada a análise.
 
-Aluno: Pedro
+O sistema poderá verificar:
+
+Média.
+Frequência.
+Evolução das notas.
+
+E apresentar uma situação:
+
+🟢 Regular
+🟡 Atenção
+🔴 Necessita apoio
+Exemplo
+Pedro
+
 Média: 4,5
 Frequência: 72%
 
+🔴 Necessita apoio
+
 Motivos:
-• Média abaixo do esperado
+• Média baixa
 • Frequência baixa
-```
 
-Os alertas terão como objetivo **auxiliar o acompanhamento pedagógico**, não substituir a avaliação dos professores.
+Outro exemplo:
 
-## 👤 Perfil do Aluno
+Lucas
 
-O perfil poderá apresentar:
+Média: 6,5
+Frequência: 83%
 
-* informações básicas;
-* notas;
-* média;
-* frequência;
-* evolução;
-* situação acadêmica;
-* possíveis alertas.
+🟡 Atenção
 
+Motivo:
+• Frequência abaixo do esperado
 
-# 🛠️ Tecnologias
+Os alertas aparecerão dentro do Dashboard.
 
-Como o projeto está sendo desenvolvido por estudantes em fase de aprendizagem, serão utilizadas tecnologias que a equipe já conhece ou está estudando.
+🟦 Semana 7 — Perfil e Consulta de Alunos
 
-### Front-end
+Criar a tela de consulta de alunos.
 
-* HTML5
-* CSS3
-* JavaScript
+👥 Lista de alunos
 
-### Back-end
+Permitir:
 
-* C#
-* ASP.NET Core
+Pesquisar aluno.
+Filtrar por turma.
+Filtrar por curso.
+Filtrar por situação.
+Visualizar perfil.
+👤 Perfil do aluno
 
-### Banco de Dados
+Mostrar:
 
-* MySQL ou SQL Server
+Pedro Silva
 
-### Desenvolvimento
+Turma: 1º A
+Curso: Desenvolvimento de Sistemas
 
-* Visual Studio Code
-* Git
-* GitHub
+Média geral: 6,2
+Frequência: 78%
 
----
+Notas
+├── Matemática: 5,0
+├── Física: 6,5
+└── Programação: 7,0
 
-# 🗂️ Estrutura do Projeto
+🟡 Atenção
 
-```text
-EDUTRACK/
-│
-├── index.html
-├── cadastro.html
-├── dashboard.html
-├── alunos.html
-├── aluno.html
-├── notas.html
-├── frequencia.html
-├── alertas.html
-│
-├── css/
-│   ├── style.css
-│   └── responsivo.css
-│
-├── js/
-│   ├── login.js
-│   ├── cadastro.js
-│   ├── dashboard.js
-│   ├── alunos.js
-│   ├── notas.js
-│   ├── frequencia.js
-│   └── alertas.js
-│
-├── img/
-│   └── logo.png
-│
-├── backend/
-│   ├── Program.cs
-│   ├── Models/
-│   └── Data/
-│
-└── README.md
-```
+A visualização será adaptada de acordo com o usuário.
 
----
+O aluno, por exemplo, não poderá acessar o perfil acadêmico de outro aluno.
 
-# 🗄️ Banco de Dados
+🟫 Semana 8 — Banco de Dados e Back-end
 
-Para manter o projeto viável dentro do prazo, inicialmente serão utilizadas poucas tabelas:
+Criar o banco e integrar com o sistema.
 
-```text
+Uma estrutura inicial:
+
 USUARIO
    │
-   └── ALUNO
+   ├── ALUNO
+   ├── PROFESSOR
+   └── COORDENADOR
 
-TURMA
+UNIDADE
+   │
+   └── CURSO
+          │
+          └── TURMA
 
 DISCIPLINA
+
+PROFESSOR_TURMA_DISCIPLINA
 
 NOTA
 
 FREQUENCIA
 
 ALERTA
-```
 
-O banco será responsável por armazenar as informações necessárias para o funcionamento do sistema.
+A tabela mais importante para os professores será:
 
----
+PROFESSOR_TURMA_DISCIPLINA
 
-# 🔒 LGPD
+Ela permitirá:
 
-O projeto considera a necessidade de proteção dos dados dos estudantes.
+Professor → Turma → Disciplina
 
-Entre os cuidados previstos estão:
+e o mesmo professor poderá aparecer várias vezes.
 
-* proteção das senhas;
-* controle de acesso;
-* acesso às informações conforme o tipo de usuário;
-* armazenamento apenas dos dados necessários;
-* cuidado com informações pessoais dos estudantes;
-* não disponibilização pública dos dados acadêmicos.
+Exemplo:
 
-O sistema não deve expor informações acadêmicas de alunos para usuários que não possuem autorização.
+João | 1º A | Matemática
+João | 1º B | Matemática
+João | 2º A | Matemática
+João | 2º A | Física
+⬛ Semana 9 — Controle de Acesso e LGPD
 
----
+Implementar as permissões.
 
-# 📅 Planejamento
+👨‍🎓 Aluno
 
-## Semana 1 — Interface
+Pode:
 
-* Criar estrutura do projeto.
-* Criar telas principais.
-* Desenvolver login e cadastro.
-* Desenvolver dashboard.
-* Criar identidade visual.
+Ver seu próprio perfil.
+Ver suas notas.
+Ver sua frequência.
+Ver seus alertas.
+👨‍🏫 Professor
 
-## Semana 2 — Funcionalidades
+Pode:
 
-* Cadastro de alunos.
-* Cadastro de turmas.
-* Cadastro de disciplinas.
-* Controle de notas.
-* Controle de frequência.
+Ver suas turmas.
+Ver alunos das suas turmas.
+Registrar notas.
+Registrar frequência.
+Ver alertas das suas turmas.
+👨‍💼 Coordenador
 
-## Semana 3 — Back-end e Banco
+Pode:
 
-* Criar banco de dados.
-* Desenvolver back-end em C#.
-* Conectar sistema ao banco.
-* Integrar as telas com os dados.
+Ver informações da unidade autorizada.
+Consultar alunos.
+Consultar professores.
+Consultar turmas.
+Vincular professores, turmas e disciplinas.
+Acompanhar alertas.
 
-## Semana 4 — Análise e Finalização
+Também revisar:
 
-* Criar sistema de alertas.
-* Finalizar dashboard.
-* Testar funcionalidades.
-* Corrigir erros.
-* Melhorar responsividade.
-* Revisar segurança e LGPD.
-* Preparar apresentação.
+Proteção das senhas.
+Controle de acesso.
+Dados pessoais.
+Dados acadêmicos.
+Permissões dos usuários.
+🧪 Semana 10 — Testes e Finalização
 
----
+Testar todas as funcionalidades.
 
-# 📦 Entrega Esperada
+🔐 Login e cadastro
+Login correto.
+Login incorreto.
+Campos vazios.
+Senhas diferentes.
+Tipos de usuário.
+👨‍🏫 Professor
+Professor com várias turmas.
+Professor com várias disciplinas.
+Registro de notas.
+Registro de frequência.
+Visualização dos alunos corretos.
+👨‍🎓 Aluno
+Visualização das próprias notas.
+Visualização da própria frequência.
+Visualização dos alertas.
+👨‍💼 Coordenador
+Consulta de turmas.
+Consulta de alunos.
+Associação professor/turma/disciplina.
+Visualização dos indicadores.
+📊 Dashboard
 
-Ao final do projeto, esperamos entregar uma versão funcional do **EduTrack**, contendo:
+Testar:
 
-* ✅ Login e cadastro;
-* ✅ Controle de usuários;
-* ✅ Cadastro de alunos;
-* ✅ Cadastro de turmas e disciplinas;
-* ✅ Registro de notas;
-* ✅ Controle de frequência;
-* ✅ Dashboard;
-* ✅ Perfil do aluno;
-* ✅ Identificação de possíveis situações de risco;
-* ✅ Alertas de desempenho;
-* ✅ Banco de dados;
-* ✅ Interface responsiva;
-* ✅ Cuidados relacionados à LGPD.
+Cálculo das médias.
+Cálculo da frequência.
+Alertas.
+Situação acadêmica.
+Evolução das notas.
+Filtros.
+📱 Responsividade
 
----
+Testar em:
 
-# 🌱 Melhorias Futuras
+Computador.
+Tablet.
+Celular.
+📦 Resultado Final
 
-Caso o projeto continue sendo desenvolvido, algumas funcionalidades poderão ser adicionadas:
+Ao final, o EduTrack terá:
 
-* 📱 Aplicativo mobile;
-* 📧 Notificações;
-* 📄 Relatórios em PDF;
-* 📊 Gráficos mais avançados;
-* 🔑 Login com Google;
-* 🤖 Recursos de inteligência artificial;
-* 🧠 Análise mais avançada do comportamento e evolução;
-* 📈 Previsões de desempenho.
+                    EDUTRACK
+                       │
+          ┌────────────┼────────────┐
+          ↓            ↓            ↓
+       ALUNO       PROFESSOR    COORDENADOR
+          │            │            │
+          └────────────┼────────────┘
+                       ↓
+                   DASHBOARD
+                       │
+       ┌───────────────┼────────────────┐
+       ↓               ↓                ↓
+    📝 NOTAS       📅 FREQUÊNCIA     🚨 ALERTAS
+       │               │                │
+       └───────────────┼────────────────┘
+                       ↓
+                 📈 EVOLUÇÃO
+                       ↓
+               🟢 🟡 🔴 SITUAÇÃO
 
-Essas funcionalidades não fazem parte do escopo inicial devido ao prazo de desenvolvimento.
-
----
-
-# 👨‍💻 Equipe
-
-### Gregori
-
-Desenvolvimento e implementação do sistema.
-
-### Guilherme
-
-Desenvolvimento e implementação do sistema.
-
-### Diogo
-
-Desenvolvimento e implementação do sistema.
-
-> As responsabilidades podem ser divididas entre os integrantes conforme as etapas do projeto e as habilidades de cada membro.
-
----
-
-## 📄 Status do Projeto
-
-🚧 **Em desenvolvimento**
-
-O projeto está sendo desenvolvido como uma solução acadêmica para o desafio de **Monitoramento do Desempenho Acadêmico de Estudantes**.
+Assim o Dashboard passa a ser o centro do sistema, em vez de vocês espalharem notas, frequência e alertas em várias páginas. Isso também deixa o projeto mais simples de apresentar e mais próximo da proposta original do EduTrack: juntar os dados acadêmicos e transformá-los em informações úteis para acompanhamento pedagógico.
