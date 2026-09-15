@@ -51,7 +51,8 @@ h1 {
     font-size: 32px;
     font-weight: 700;
     z-index: 2;
-    white-space: nowrap;
+    margin-bottom: 20px;
+    
 }
 
 form {
